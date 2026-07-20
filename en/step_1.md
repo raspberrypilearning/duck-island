@@ -7,7 +7,7 @@ A brief description - one or two sentences.
 --- print-only ---
 
 ![ALT TEXT](images/IMAGE.png)
-
+ 
 --- /print-only ---
 
 --- no-print ---
