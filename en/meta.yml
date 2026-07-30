@@ -1,14 +1,26 @@
-title: Project title in sentence case
+title: Duck island
 hero_image: images/banner.png
-description: A short description of the project
+description: Steer through a drifting pond, dodge the rocks, and collect the ducks.
 listed: false
 pdf: false
 steps:
   - title: What you will make
-  - title: Step title
+  - title: Create your duck
     completion:
-      - engaged      
-  - title: Challenge
+      - engaged
+  - title: Make your duck bob
+  - title: Add the rocks
+  - title: Place the rocks
+  - title: Make the rocks drift
+  - title: Stop at the rocks
+  - title: Clear the rocks off-screen
+  - title: Collect the ducks
+  - title: Add the hook
+    completion:
+      - internal
+  - title: 'Challenge: add ripples'
+    challenge: true
+  - title: 'Challenge: make it your own'
     challenge: true
     completion:
       - external
