@@ -1,51 +1,38 @@
-## Add the hook
+## Collect the ducks
 
-In this step, you'll add a hook — a hazard your duck has to dodge. Get caught and the game is over.
-
-> [!TASK]
->
-> ![The hook sprite.](images/hazard-sprite.png){:width="150"}
->
-> Right-click your `collectable duck` sprite and duplicate it. Rename the copy `hook`.
->
-> ![Duplicating a sprite.](images/duplicate-sprite.gif){:width="450"}
+In this step, you'll add ducks to collect for points.
 
 > [!TASK]
 >
-> Change its costume to a hook.
+> ![The collectable duck sprite.](images/colletable-sprite.png){:width="150"}
 >
-> ![Choosing a costume.](images/chose-a-costume.png){:width="300"}
+> Right-click your `rock` sprite and duplicate it. Rename the copy `collectable duck` and give it a duck costume. It already knows how to appear and drift — you'll just change what happens when your `player` reaches it.
 
 > [!TASK]
 >
-> The hook shouldn't score points. In its `touching (player v)?`{:class="block3sensing"} check, delete the `change [Score v] by (1)`{:class="block3variables"} block and change the sound to one that sounds like getting caught.
+> Make a `Score`{:class="block3variables"} variable and tick its checkbox so it shows on the stage. In the collectable duck's `green flag`{:class="block3events"} script, set the score to 0 at the start.
 >
 > ```blocks3
-> when I start as a clone
-> forever
-> if <touching (player v)?> then
-> start sound (Rip v)
-> delete this clone
-> end
-> end
+> when green flag clicked
+> set [rock speed v] to (3)
+> +set [Score v] to (0)
+> hide
+> go to back layer
 > ```
 
 > [!TASK]
 >
-> Now make the game end when the hook catches your duck. Swap the `delete this clone`{:class="block3control"} block for a `stop (all v)`{:class="block3control"} block.
+> In its `when I start as a clone`{:class="block3control"} loop, add a check: if it's `touching (player v)?`{:class="block3sensing"}, add to the score, play a sound, and delete the clone.
 >
 > ```blocks3
 > when I start as a clone
 > forever
-> if <touching (player v)?> then
-> start sound (Rip v)
-> stop [all v]
+> +if <touching (player v)?> then
+> +change [Score v] by (1)
+> +start sound (Glug v)
+> +delete this clone
 > end
 > end
 > ```
 
-**Test:** Swim into a hook. The game stops.
-
-> [!TIP]
->
-> To make the hooks trickier to dodge, give each one a little drift of its own: in the clone script, `point in direction (pick random (-180) to (180))`{:class="block3motion"} and add `move (3.2) steps`{:class="block3motion"} inside the loop.
+**Test:** Swim into a duck. Your score goes up and the duck disappears with a sound.

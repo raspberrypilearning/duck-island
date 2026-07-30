@@ -1,16 +1,17 @@
 title: Duck island
 hero_image: images/banner.png
-description: Steer through a drifting pond, dodge the rocks, and collect the ducks.
+description: Swim through a sea of drifting rocks and hooks, dodging them to round up the other lost ducks.
 listed: false
 pdf: false
 steps:
   - title: What you will make
-  - title: Create your duck
+  - title: Move the duck
     completion:
       - engaged
-  - title: Make your duck bob
-  - title: Add the rocks
-  - title: Place the rocks
+  - title: Bob on the water
+  - title: Make some waves
+  - title: Add rocks
+  - title: Rocks on the edge
   - title: Make the rocks drift
   - title: Stop at the rocks
   - title: Clear the rocks off-screen

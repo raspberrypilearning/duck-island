@@ -1,8 +1,10 @@
 ## What you will make
 
-Help a lost duck swim through a sea of drifting rocks, dodge them, and round up the other ducks before your lives run out.
+Help a bath-toy duck swim through a sea of  rocks and fishing hooks to round up other lost ducks.
 
-Duck island is inspired by a true story. In 1992, thousands of bath-toy ducks were washed off a cargo ship and drifted across the world's oceans for years, turning up on beaches thousands of miles away. In this game, you help round the lost ducks back up.
+The games uses a parallax effect, where it looks like the duck is moving, but instead things move in the background.
+
+Try a finished version out. Sound on! 🔊
 
 > [!NOPRINT]
 >

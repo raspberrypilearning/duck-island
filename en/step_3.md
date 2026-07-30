@@ -1,12 +1,14 @@
-## Make your duck bob
+## Bob on the water
 
 In this step, you'll make your duck bob on the water.
+
+Start by making the duck go up and down when a key is pressed.
 
 > [!TASK]
 >
 > ![The player sprite.](images/player-sprite.png){:width="150"}
 >
-> On your `player` sprite, add a second `green flag`{:class="block3events"} with a `forever`{:class="block3control"} loop and an `if () else`{:class="block3control"} block inside.
+> Add a second `green flag`{:class="block3events"} with a `forever`{:class="block3control"} loop and an `if () else`{:class="block3control"} block inside.
 >
 > ```blocks3
 > when green flag clicked
@@ -19,7 +21,7 @@ In this step, you'll make your duck bob on the water.
 
 > [!TASK]
 >
-> Drop a `key (any v) pressed?`{:class="block3sensing"} block into the `if`{:class="block3control"}.
+> Drag a `key () pressed?`{:class="block3sensing"} block into the `if`{:class="block3control"} and choose **any** from the drop-down list.
 >
 > ```blocks3
 > when green flag clicked
@@ -49,9 +51,7 @@ In this step, you'll make your duck bob on the water.
 
 > [!TASK]
 >
-> The resting bob is the same blocks, just gentler. Right-click the blocks you just made to duplicate them, drop the copy into the `else`{:class="block3control"} part, and change the values.
->
-> ![Duplicating the blocks.](images/duplicate-blocks.gif){:width="450"}
+> The idle bob uses the same blocks, just smaller and slower. Right-click the blocks you just made to duplicate them, drop the copy into the `else`{:class="block3control"} part, and change the values.
 >
 > ```blocks3
 > when green flag clicked

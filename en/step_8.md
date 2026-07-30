@@ -1,44 +1,50 @@
-## Clear the rocks off-screen
+## Stop at the rocks
 
-Rocks that drift off the edge are still there behind the scenes, slowing your game down. In this step, you'll delete each rock once it leaves the stage.
+Right now your duck swims straight through the rocks. In this step, you'll make the rocks block its path. 
 
 > [!TASK]
 >
-> ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
+> ![The duck sprite.](images/player-sprite.png){:width="150"}
 >
-> In the rock's `when I start as a clone`{:class="block3control"} loop, delete the clone once it drifts off the edge. Start with the `right arrow`{:class="block3sensing"}: when you're heading right and the rock's `x position`{:class="block3motion"} has passed the left edge, delete it.
+> Make four variables: `block right`{:class="block3variables"}, `block left`{:class="block3variables"}, `block up`{:class="block3variables"}, and `block down`{:class="block3variables"}. Untick their checkboxes so they don't show on the stage.
+
+> [!TASK]
+>
+> On your `player` sprite, under the switch costume, add an `if () else`{:class="block3control"} block with a `touching (obstacle v)?`{:class="block3sensing"} check inside. Set that direction's block variable to 1 if it's touching a rock, otherwise 0.
+>
+> Here's the `right arrow`{:class="block3sensing"} one — do the same for left, up, and down.
 >
 > ```blocks3
-> when I start as a clone
-> forever
-> +if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
-> delete this clone
+> if <key (right arrow v) pressed?> then
+> switch costume to (right v)
+> +if <touching (obstacle v)?> then
+> set [block right v] to (1)
+> else
+> set [block right v] to (0)
 > end
 > end
 > ```
 
-**Test:** Swim to the right for a while. Rocks that drift off the left edge disappear.
-
 > [!TASK]
 >
-> Now add the other three edges to the same loop.
+> Now go to your `rock` sprite. Make each rock only drift when that direction isn't blocked. Add `and (block ...) = (0)` to each `if`{:class="block3control"} in the drift loop.
 >
 > ```blocks3
 > when I start as a clone
 > forever
-> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
-> delete this clone
+> if <<key (right arrow v) pressed?> and <(block right) = (0)>> then
+> change x by ((0) - (rock speed))
 > end
-> +if <<key (left arrow v) pressed?> and <(x position) > (240)>> then
-> delete this clone
+> if <<key (left arrow v) pressed?> and <(block left) = (0)>> then
+> change x by (rock speed)
 > end
-> +if <<key (up arrow v) pressed?> and <(y position) < (-180)>> then
-> delete this clone
+> if <<key (down arrow v) pressed?> and <(block down) = (0)>> then
+> change y by (rock speed)
 > end
-> +if <<key (down arrow v) pressed?> and <(y position) > (180)>> then
-> delete this clone
+> if <<key (up arrow v) pressed?> and <(block up) = (0)>> then
+> change y by ((0) - (rock speed))
 > end
 > end
 > ```
 
-**Test:** Swim around for a while. Rocks disappear once they drift off any edge, and your game keeps running smoothly.
+**Test:** Swim into a rock. Your duck stops instead of sliding through it.

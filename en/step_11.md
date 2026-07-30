@@ -1,36 +1,51 @@
-## Challenge: add ripples
+## Add the hook
 
-Make your duck look like it's really floating by adding ripples around it.
+In this step, you'll add a hook — a hazard your duck has to dodge. Get caught and the game is over.
 
-> [!CHALLENGE]
+> [!TASK]
 >
-> ![The ripple sprite.](images/ripple-sprite.png){:width="150"}
+> ![The hook sprite.](images/hazard-sprite.png){:width="150"}
 >
-> Make a new `ripple` sprite with a couple of ripple costumes, and sit it just below your duck.
+> Right-click your `collectable duck` sprite and duplicate it. Rename the copy `hook`.
+>
+> ![Duplicating a sprite.](images/duplicate-sprite.gif){:width="450"}
 
-> [!CHALLENGE]
+> [!TASK]
 >
-> When your duck is resting, show gentle ripples — a `forever`{:class="block3control"} loop that shows the ripple and goes to the `next costume`{:class="block3looks"} every so often.
+> Change its costume to a hook.
+>
+> ![Choosing a costume.](images/chose-a-costume.png){:width="300"}
 
-> [!CHALLENGE]
+> [!TASK]
 >
-> When your duck is moving, show bigger, faster ripples. Check `key (any v) pressed?`{:class="block3sensing"} and change costume more quickly.
-
-> [!HINT]
->
-> Here's one way to do both in a single loop:
+> The hook shouldn't score points. In its `touching (player v)?`{:class="block3sensing"} check, delete the `change [Score v] by (1)`{:class="block3variables"} block and change the sound to one that sounds like getting caught.
 >
 > ```blocks3
-> when green flag clicked
+> when I start as a clone
 > forever
-> if <key (any v) pressed?> then
-> show
-> next costume
-> wait (0.1) seconds
-> else
-> show
-> next costume
-> wait (0.4) seconds
+> if <touching (player v)?> then
+> start sound (Rip v)
+> delete this clone
 > end
 > end
 > ```
+
+> [!TASK]
+>
+> Now make the game end when the hook catches your duck. Swap the `delete this clone`{:class="block3control"} block for a `stop (all v)`{:class="block3control"} block.
+>
+> ```blocks3
+> when I start as a clone
+> forever
+> if <touching (player v)?> then
+> start sound (Rip v)
+> stop [all v]
+> end
+> end
+> ```
+
+**Test:** Swim into a hook. The game stops.
+
+> [!TIP]
+>
+> To make the hooks trickier to dodge, give each one a little drift of its own: in the clone script, `point in direction (pick random (-180) to (180))`{:class="block3motion"} and add `move (3.2) steps`{:class="block3motion"} inside the loop.
