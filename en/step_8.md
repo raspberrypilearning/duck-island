@@ -7,37 +7,57 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
 > Select **Make a Block** and name it `disappear`{:class="block3myblocks"}.
+>
+> ![Making a block.](images/make-a-block.png){:width="250"}
 
 > [!TASK]
 >
-> Under `define disappear`{:class="block3myblocks"}, add an `if then`{:class="block3control"} with `delete this clone`{:class="block3control"} inside.
+> Under `define disappear`{:class="block3myblocks"}, add an `if then`{:class="block3control"} and drag an `and`{:class="block3operators"} block into it.
 >
 > ```blocks3
 > define disappear
-> if <> then
-> delete this clone
+> if <<> and <>> then
 > end
 > ```
 
 > [!TASK]
 >
-> Drag an `and`{:class="block3operators"} block into the `if`{:class="block3control"}. In the left side, put a `key pressed`{:class="block3sensing"}.
+> In the left side of the `and`{:class="block3operators"}, put a `key pressed`{:class="block3sensing"} set to the **right arrow**.
 >
 > ```blocks3
 > define disappear
 > if <<key (right arrow v) pressed?> and <>> then
-> delete this clone
 > end
 > ```
 
 > [!TASK]
 >
-> In the right side of the `and`{:class="block3operators"}, drag a `less than`{:class="block3operators"} block. Put `x position`{:class="block3motion"} on the left and `-240` on the right.
+> In the right side of the `and`{:class="block3operators"}, drag a `less than`{:class="block3operators"} block.
+>
+> ```blocks3
+> define disappear
+> if <<key (right arrow v) pressed?> and <() < ()>> then
+> end
+> ```
+
+> [!TASK]
+>
+> Put `x position`{:class="block3motion"} on the left and `-240` on the right.
 >
 > ```blocks3
 > define disappear
 > if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
-> delete this clone
+> end
+> ```
+
+> [!TASK]
+>
+> Add a `delete this clone`{:class="block3control"} inside the `if`{:class="block3control"}.
+>
+> ```blocks3
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
+> +delete this clone
 > end
 > ```
 

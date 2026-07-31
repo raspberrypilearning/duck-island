@@ -4,7 +4,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> Right-click your `collectable` sprite and duplicate it. Rename the copy `hazard`.
+> Right-click your **collectable** sprite and duplicate it. Rename the copy **hazard**.
 >
 > ![Duplicating a sprite.](images/duplicate-sprite.gif){:width="450"}
 
@@ -18,23 +18,25 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> A hazard shouldn't score points. Right-click the `change score by 1`{:class="block3variables"} block and delete it.
+> A hazard shouldn't score points. Right-click the `change score`{:class="block3variables"} block and delete it.
+>
+> ![Deleting a block.](images/delete-block.gif){:width="450"}
 
 > [!TASK]
 >
-> Give your hazard a different sound. Open the **Sounds** tab and click **Choose a Sound**.
+> Give your hazard a different sound. Open the **Sounds** tab.
 >
-> ![The Sounds tab.](images/sounds-tab.png){:width="300"}
+> ![The Sounds tab.](images/sounds-tab.png){:width="450"}
 
 > [!TASK]
 >
-> Pick a sound from the library — the hook uses a "Rip" noise.
+> Click **Choose a Sound** and pick one from the library — the hook uses a "Rip" noise.
 >
-> ![Choosing a sound.](images/sounds-choose.png){:width="300"}
+> ![Choosing a sound.](images/sounds-choose.png){:width="450"}
 
 > [!TASK]
 >
-> Back in the **Code** tab, change the sound in the `touching player?`{:class="block3sensing"} check to your new one.
+> Back in the **Code** tab, change the `start sound`{:class="block3sound"} to your new one.
 >
 > ```blocks3
 > when I start as a clone
@@ -43,7 +45,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 > move
 > disappear
 > if <touching (player v)?> then
-> start sound (Rip v)
+> +start sound (Rip v)
 > delete this clone
 > end
 > end

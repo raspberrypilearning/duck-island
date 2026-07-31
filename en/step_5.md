@@ -26,7 +26,13 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 
 > [!TASK]
 >
-> Each rock needs to appear at a random spot. Select **Make a Block**, name it `appear`{:class="block3myblocks"}, then build it under `define appear`{:class="block3myblocks"}.
+> Each rock needs to appear at a random spot. Select **Make a Block** and name it `appear`{:class="block3myblocks"}.
+>
+> ![Making a block.](images/make-a-block.png){:width="250"}
+
+> [!TASK]
+>
+> Under `define appear`{:class="block3myblocks"}, add a `go to`{:class="block3motion"} and a `show`{:class="block3looks"}. The example uses `pick random`{:class="block3operators"} for x and y, so each rock appears in a different spot.
 >
 > ```blocks3
 > define appear
@@ -36,7 +42,7 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 
 > [!TASK]
 >
-> You can also give each rock a random size. Add it to your `appear`{:class="block3myblocks"} block.
+> You can also give each rock a random size.
 >
 > ```blocks3
 > define appear
@@ -60,7 +66,7 @@ The rocks need to appear while the duck is swimming using the arrow keys. To do 
 
 > [!TASK]
 >
-> Wrap the `create clone of myself`{:class="block3control"} in an `if then`{:class="block3control"} block, and drop in a `key pressed`{:class="block3sensing"} set to **any**.
+> Move the `create clone`{:class="block3control"} into an `if then`{:class="block3control"} block, and drop in a `key pressed`{:class="block3sensing"} set to **any**.
 >
 > ```blocks3
 > when green flag clicked
@@ -72,12 +78,26 @@ The rocks need to appear while the duck is swimming using the arrow keys. To do 
 
 > [!TASK]
 >
-> To keep it going, wrap that in a `forever`{:class="block3control"} loop and add a short random `wait`{:class="block3control"} so you don't get hundreds of rocks at once.
+> Move that into a `forever`{:class="block3control"} loop to keep it going.
 >
 > ```blocks3
 > when green flag clicked
 > hide
 > +forever
+> if <key (any v) pressed?> then
+> create clone of (myself v)
+> end
+> end
+> ```
+
+> [!TASK]
+>
+> Add a `wait`{:class="block3control"} with a `pick random`{:class="block3operators"}. This is how often the rocks will appear.
+>
+> ```blocks3
+> when green flag clicked
+> hide
+> forever
 > if <key (any v) pressed?> then
 > create clone of (myself v)
 > end

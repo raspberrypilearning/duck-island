@@ -6,9 +6,13 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > ![The collectable duck sprite.](images/colletable-sprite.png){:width="150"}
 >
-> Right-click your `rock` sprite and duplicate it. Rename the copy `collectable` and give it a duck costume — copy one over from your duck sprite, or make your own.
+> Right-click your `rock` sprite and duplicate it. Rename the copy `collectable`.
 >
 > ![Duplicating a sprite.](images/duplicate-sprite.gif){:width="450"}
+
+> [!TASK]
+>
+> Give it a duck costume — copy one over from your duck sprite, or make a different one of your own.
 
 > [!TASK]
 >

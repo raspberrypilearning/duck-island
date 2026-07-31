@@ -51,7 +51,9 @@ Start by making the duck go up and down when a key is pressed.
 
 > [!TASK]
 >
-> The idle bob uses the same blocks, just smaller and slower. Right-click the blocks you just made to duplicate them, drop the copy into the `else`{:class="block3control"} part, and change the values.
+> The idle bob uses the same blocks, just smaller and slower. Right-click the blocks you just made to duplicate them, and drop the copy into the `else`{:class="block3control"} part.
+>
+> ![Duplicating the blocks.](images/duplicate-blocks.gif){:width="450"}
 >
 > ```blocks3
 > when green flag clicked
@@ -62,10 +64,31 @@ Start by making the duck go up and down when a key is pressed.
 > change y by (-3)
 > wait (0.1) seconds
 > else
-> +change y by (1)
-> +wait (0.3) seconds
-> +change y by (-1)
-> +wait (0.3) seconds
+> +change y by (3)
+> +wait (0.1) seconds
+> +change y by (-3)
+> +wait (0.1) seconds
+> end
+> end
+> ```
+
+> [!TASK]
+>
+> Change the values so the idle bob is smaller and slower.
+>
+> ```blocks3
+> when green flag clicked
+> forever
+> if <key (any v) pressed?> then
+> change y by (3)
+> wait (0.1) seconds
+> change y by (-3)
+> wait (0.1) seconds
+> else
+> change y by (1)
+> wait (0.3) seconds
+> change y by (-1)
+> wait (0.3) seconds
 > end
 > end
 > ```

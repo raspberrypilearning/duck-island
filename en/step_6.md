@@ -1,12 +1,12 @@
 ## Rocks on the edge
 
-The rocks need to look like they're drifting in from off the stage. In this step, you'll add to your `appear`{:class="block3myblocks"} block so each rock starts at the edge the duck is swimming towards.
+In this step, you'll make each rock starts at the edge the duck is swimming towards.
 
 > [!TASK]
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> In your `appear`{:class="block3myblocks"} block, add an `if then`{:class="block3control"} with a `key pressed`{:class="block3sensing"} check set to the **right arrow**.
+> Add an `if then`{:class="block3control"} with a `key pressed`{:class="block3sensing"} check set to the **right arrow** to the bottom of the `appear`{:class="block3myblocks"} block,
 >
 > ```blocks3
 > define appear
@@ -19,7 +19,7 @@ The rocks need to look like they're drifting in from off the stage. In this step
 
 > [!TASK]
 >
-> Set the rock's x to 240 so it starts at the right edge.
+> Set the **x** to `240` so it starts at the right edge.
 >
 > ```blocks3
 > define appear

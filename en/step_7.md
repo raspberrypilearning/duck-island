@@ -1,16 +1,24 @@
 ## Move the rocks
 
-The rocks move across the stage, which makes it look like your duck is swimming. You'll build the movement as a `move`{:class="block3myblocks"} block to keep the code tidy.
+The rocks move across the stage, which makes it look like your duck is swimming. 
 
 > [!TASK]
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
 > Select **Make a Block** and name it `move`{:class="block3myblocks"}.
+>
+> ![Making a block.](images/make-a-block.png){:width="250"}
 
 > [!TASK]
 >
-> The rocks move at a speed you can change. Make a variable called **rock speed** and set it to 3 at the start of the `green flag`{:class="block3events"} script.
+> Make a variable called **rock speed**.
+>
+> ![Making a variable.](images/make-a-variable.png){:width="250"}
+
+> [!TASK]
+>
+> Set the speed to `3` at the start of the `green flag`{:class="block3events"} script.
 >
 > ```blocks3
 > when green flag clicked
@@ -36,7 +44,7 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 
 > [!TASK]
 >
-> Move the rock with `change x by`{:class="block3motion"}, taking **rock speed** away from 0 so it slides the opposite way to the arrow.
+> Move the rock with a `change x by`{:class="block3motion"}. Use a `take away`{:class="block3operators"}, and put a `0` on the left and **rock speed** on the right, so it slides the opposite way to the arrow.
 >
 > ```blocks3
 > define move
@@ -57,7 +65,7 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 > end
 > ```
 
-**Test:** Hold the right arrow. The rocks slide left — it looks like your duck is swimming to the right. Experiment with the speed until it looks right.
+**Test:** Hold the right arrow. The rocks slide left — it looks like your duck is swimming to the right.
 
 > [!TASK]
 >

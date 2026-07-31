@@ -6,7 +6,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 >
 > Make a new sprite. Click the **Paint** new sprite icon and name it `wave`.
 >
-> ![Painting a new sprite.](images/sprite-paint.png){:width="300"}
+> ![Painting a new sprite.](images/sprite-paint.png){:width="250"}
 
 > [!TASK]
 >
@@ -26,7 +26,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 >
 > ```blocks3
 > when green flag clicked
-> go to back layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > ```
 
@@ -36,7 +36,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 >
 > ```blocks3
 > when green flag clicked
-> go to back layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > +forever
 > change y by (-1)
@@ -48,11 +48,19 @@ To make the movement look like it's really in water, you can add a wave that cha
 
 **Test:** The wave bobs the opposite way to your duck, so it looks like it's floating.
 
+Now make an animated version for when the duck moves.
+
 > [!TASK]
 >
-> Now make an animated version for when the duck moves. In the **Costumes** tab, duplicate the circle and make the copy a bit bigger, then duplicate again and make it bigger still — three costumes in all.
+> Select the **Costumes** tab.
 >
-> ![The three wave costumes.](images/wave-costumes.gif){:width="450"}
+> ![The Costumes tab.](images/tab_costumes.png){:width="250"}
+
+> [!TASK]
+>
+> Duplicate the circle and make the copy a bit bigger, then duplicate again and make it bigger still — three costumes in all.
+>
+> ![Demo of making the wave costumes.](images/wave-costumes.gif){:width="450"}
 
 > [!TASK]
 >
@@ -60,7 +68,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 >
 > ```blocks3
 > when green flag clicked
-> go to back layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
 > +if <> then
@@ -79,7 +87,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 >
 > ```blocks3
 > when green flag clicked
-> go to back layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
 > if <key (any v) pressed?> then
@@ -98,7 +106,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 >
 > ```blocks3
 > when green flag clicked
-> go to back layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
 > if <key (any v) pressed?> then
@@ -119,7 +127,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 >
 > ```blocks3
 > when green flag clicked
-> go to back layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
 > if <key (any v) pressed?> then
