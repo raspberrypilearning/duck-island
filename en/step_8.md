@@ -8,7 +8,7 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 >
 > Select **Make a Block** and name it `disappear`{:class="block3myblocks"}.
 >
-> ![Making a block.](images/make-a-block.png){:width="250"}
+> ![Making a block.](images/make-block.png){:width="250"}
 
 > [!TASK]
 >
@@ -88,10 +88,10 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 > +if <<key (left arrow v) pressed?> and <(x position) > (240)>> then
 > delete this clone
 > end
-> +if <<key (up arrow v) pressed?> and <(y position) < (-180)>> then
+> +if <<key (down arrow v) pressed?> and <(y position) > (180)>> then
 > delete this clone
 > end
-> +if <<key (down arrow v) pressed?> and <(y position) > (180)>> then
+> +if <<key (up arrow v) pressed?> and <(y position) < (-180)>> then
 > delete this clone
 > end
 > ```

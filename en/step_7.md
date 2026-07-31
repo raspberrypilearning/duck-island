@@ -8,13 +8,13 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 >
 > Select **Make a Block** and name it `move`{:class="block3myblocks"}.
 >
-> ![Making a block.](images/make-a-block.png){:width="250"}
+> ![Making a block.](images/make-block.png){:width="250"}
 
 > [!TASK]
 >
 > Make a variable called **rock speed**.
 >
-> ![Making a variable.](images/make-a-variable.png){:width="250"}
+> ![Making a variable.](images/make-variable.png){:width="250"}
 
 > [!TASK]
 >

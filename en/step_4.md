@@ -10,13 +10,13 @@ To make the movement look like it's really in water, you can add a wave that cha
 
 > [!TASK]
 >
-> ![The wave sprite.](images/ripple-sprite.png){:width="150"}
+> ![The wave sprite.](images/wave-sprite.png){:width="150"}
 >
 > Use the paint tools to draw a circle. This is the shape of your wave.
 >
 > Make it a bit bigger than your duck.
 >
-> ![Resizing the wave.](images/resize-wave.gif){:width="450"}
+> ![Resizing the wave.](images/paint-wave.gif){:width="450"}
 
 > [!TASK]
 >
@@ -64,7 +64,7 @@ Now make an animated version for when the duck moves.
 >
 > **Duplicate** the circle and make the new one a bit bigger, then duplicate again and make it bigger still — three costumes in all.
 >
-> ![Demo of making the wave costumes.](images/wave-costumes.gif){:width="450"}
+> ![Demo of making the wave costumes.](images/animate-waves.gif){:width="450"}
 
 
 > [!TASK]

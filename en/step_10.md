@@ -8,13 +8,13 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > Right-click your **rock** sprite and duplicate it. Rename the copy **collectable**.
 >
-> ![Duplicating a sprite.](images/duplicate-sprite.gif){:width="450"}
+> ![Duplicating a sprite.](images/duplicate-obstacle.gif){:width="450"}
 
 > [!TASK]
 >
 > Give it a duck costume — copy one over from your duck sprite, or make a different one of your own.
 > 
-> ![Copying costume.](images/copy-cosutume.gif){:width="450"}
+> ![Copying costume.](images/copy-costume.gif){:width="450"}
 
 > [!TASK]
 >
@@ -35,7 +35,7 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > Make a variable called **score** and tick its checkbox so it shows on the stage.
 >
-> ![Variable UI](images/variable.png){:width="300"}
+> ![Variable UI](images/make-variable.png){:width="300"}
 
 > [!TASK]
 >

@@ -6,7 +6,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 >
 > Right-click your **collectable** sprite and duplicate it. Rename the copy **hazard**.
 >
-> ![Duplicating a sprite.](images/duplicate-sprite.gif){:width="450"}
+> ![Duplicating a sprite.](images/duplicate-colletable.gif){:width="450"}
 
 > [!TASK]
 >
@@ -20,7 +20,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 >
 > A hazard shouldn't score points. Right-click the `change score`{:class="block3variables"} block and delete it.
 >
-> ![Deleting a block.](images/delete-block.gif){:width="450"}
+> ![Deleting a block.](images/delete-score.gif){:width="450"}
 
 > [!TASK]
 >

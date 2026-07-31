@@ -8,7 +8,7 @@ Right now your duck swims straight through the rocks. In this step, you'll make 
 >
 > In the **player** sprite, make four variables: **right blocked**, **left blocked**, **up blocked**, and **down blocked**. Untick their checkboxes so they don't show on the stage.
 >
-> ![Making a variable.](images/make-a-variable.png){:width="250"}
+> ![Making a variable.](images/make-variable.png){:width="250"}
 
 You made this `switch costume`{:class="block3looks"} script for the right arrow in step 2:
 

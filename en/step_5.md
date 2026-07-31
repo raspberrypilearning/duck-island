@@ -28,7 +28,7 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 >
 > Each rock needs to appear at a random spot. Select **Make a Block** and name it `appear`{:class="block3myblocks"}.
 >
-> ![Making a block.](images/make-a-block.png){:width="250"}
+> ![Making a block.](images/make-block.png){:width="250"}
 
 > [!TASK]
 >
