@@ -2,27 +2,39 @@
 
 You've got a working game! Here are some ways to take it further.
 
-> [!CHALLENGE]
+> [!TASK]
+>
+> ### More rock costumes
 >
 > Add a second rock costume so the rocks aren't all identical.
 
-> [!CHALLENGE]
+> [!TASK]
+>
+> ### Give your duck lives
 >
 > Give your duck lives, so it takes a few hooks before the game ends.
 
-> [!CHALLENGE]
+> [!TASK]
+>
+> ### Highest score
 >
 > Keep track of the highest score.
 
-> [!CHALLENGE]
+> [!TASK]
+>
+> ### Game over screen
 >
 > Add a game over screen.
 
-> [!CHALLENGE]
+> [!TASK]
+>
+> ### Music and sound
 >
 > Add background music and more sound effects.
 
-> [!CHALLENGE]
+> [!TASK]
+>
+> ### More movement
 >
 > Add more moving things, like waves or other hazards.
 

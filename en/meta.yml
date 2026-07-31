@@ -19,8 +19,6 @@ steps:
   - title: Add a hazard
     completion:
       - internal
-  - title: 'Challenge: add ripples'
-    challenge: true
   - title: 'Challenge: make it your own'
     challenge: true
     completion:
