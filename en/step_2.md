@@ -1,6 +1,6 @@
 ## Move the duck
 
-In this step you will make the duck move in different directions with the arrow keys.
+In this step you will make the duck look like it is moving with the arrow keys.
 
 > [!TASK]
 >

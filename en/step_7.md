@@ -1,45 +1,60 @@
-## Make the rocks drift
+## Move the rocks
 
-
-
-
-START HERER
-
-Instead of the duck moving, the rocks slide past it, which makes it look like your duck is swimming.
+The rocks move across the stage, which makes it look like your duck is swimming. You'll build the movement as a `move`{:class="block3custom"} block to keep the code tidy.
 
 > [!TASK]
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> Make a `rock speed`{:class="block3variables"} variable and set it to 3 at the start of the rock's `green flag`{:class="block3events"} script.
+> Select **Make a Block** and name it `move`{:class="block3custom"}.
+
+> [!TASK]
+>
+> The rocks move at a speed you can change. Make a variable called `rock speed`{:class="block3variables"} and set it to 3 at the start of the `green flag`{:class="block3events"} script.
 >
 > ```blocks3
 > when green flag clicked
 > +set [rock speed v] to (3)
+> hide
+> forever
+> if <key (any v) pressed?> then
+> create clone of (myself v)
+> end
+> wait (pick random (1) to (3)) seconds
+> end
 > ```
 
 > [!TASK]
 >
-> At the bottom of the `when I start as a clone`{:class="block3control"} script, add a `forever`{:class="block3control"} loop. Start with one direction: when the `right arrow`{:class="block3sensing"} is pressed, move the rock left by `rock speed`{:class="block3variables"}.
+> Under `define move`{:class="block3custom"}, add an `if () then`{:class="block3control"} with a `key (right arrow v) pressed?`{:class="block3sensing"} check. Move the rock with `change x by ()`{:class="block3motion"}, taking `rock speed`{:class="block3variables"} away from 0 so it slides the opposite way to the arrow.
 >
 > ```blocks3
-> when I start as a clone
-> +forever
+> define move
 > if <key (right arrow v) pressed?> then
 > change x by ((0) - (rock speed))
 > end
-> end
 > ```
-
-**Test:** Hold the right arrow. The rocks slide left — it looks like your duck is swimming to the right.
 
 > [!TASK]
 >
-> Now add the other three directions to the same `forever`{:class="block3control"} loop.
+> Call your `move`{:class="block3custom"} block in a `forever`{:class="block3control"} loop at the bottom of `when I start as a clone`{:class="block3control"}.
 >
 > ```blocks3
 > when I start as a clone
-> forever
+> appear
+> +forever
+> move
+> end
+> ```
+
+**Test:** Hold the right arrow. The rocks slide left — it looks like your duck is swimming to the right. Experiment with the speed until it looks right.
+
+> [!TASK]
+>
+> Now add the other three directions to the same `move`{:class="block3custom"} block.
+>
+> ```blocks3
+> define move
 > if <key (right arrow v) pressed?> then
 > change x by ((0) - (rock speed))
 > end
@@ -52,11 +67,6 @@ Instead of the duck moving, the rocks slide past it, which makes it look like yo
 > +if <key (up arrow v) pressed?> then
 > change y by ((0) - (rock speed))
 > end
-> end
 > ```
 
 **Test:** Hold an arrow key. The rocks slide past — it looks like your duck is swimming.
-
-> [!TIP]
->
-> Press right and the rocks move left, which makes it feel like the duck is heading right. That opposite movement is what creates the illusion.

@@ -26,28 +26,35 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 
 > [!TASK]
 >
-> ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
->
-> Add a `when I start as a clone`{:class="block3control"} script. Send each rock to a random spot, then show it.
+> Each rock needs to appear at a random spot. Select **Make a Block**, name it `appear`{:class="block3custom"}, then build it under `define appear`{:class="block3custom"}.
 >
 > ```blocks3
-> when I start as a clone
+> define appear
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > show
 > ```
 
 > [!TASK]
 >
-> You can also give each rock a random size.
+> In `when I start as a clone`{:class="block3control"}, call your `appear`{:class="block3custom"} block.
 >
 > ```blocks3
 > when I start as a clone
+> appear
+> ```
+
+> [!TASK]
+>
+> You can also give each rock a random size. Add it to your `appear`{:class="block3custom"} block.
+>
+> ```blocks3
+> define appear
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > +set size to (pick random (20) to (100)) %
 > show
 > ```
 
-**Test:** Click the green flag a few times. Each rock appears at a different size and spot on the stage.
+**Test:** Click the green flag a few times. A rock appears at a different size and spot each time.
 
 The rocks need to appear while the duck is swimming using the arrow keys. To do that, trigger the clone with a key press instead of the green flag.
 
@@ -78,4 +85,8 @@ The rocks need to appear while the duck is swimming using the arrow keys. To do 
 > end
 > ```
 
-**Test:** Press the arrow keys. Rocks appear at random spots, with a 1–3 second wait between each one.
+**Test:** Press the arrow keys. Rocks appear at random spots and sizes, with a 1–3 second wait between each one.
+
+> [!TIP]
+>
+> Experiment with the wait time to make more or fewer rocks appear.

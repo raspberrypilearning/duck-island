@@ -1,14 +1,10 @@
 ## Challenge: make it your own
 
-You've got a working game. Here are some ways to take it further — pick any that appeal.
+You've got a working game! Here are some ways to take it further.
 
 > [!CHALLENGE]
 >
 > Add a second rock costume so the rocks aren't all identical.
-
-> [!CHALLENGE]
->
-> Add another obstacle, like seaweed.
 
 > [!CHALLENGE]
 >
@@ -17,6 +13,10 @@ You've got a working game. Here are some ways to take it further — pick any th
 > [!CHALLENGE]
 >
 > Keep track of the highest score.
+
+> [!CHALLENGE]
+>
+> Add a game over screen.
 
 > [!CHALLENGE]
 >

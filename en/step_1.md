@@ -1,6 +1,6 @@
 ## What you will make
 
-Help a bath-toy duck swim through a sea of  rocks and fishing hooks to round up other lost ducks.
+Help a duck swim through a sea of  rocks and fishing hooks to round up other lost ducks.
 
 The games uses a parallax effect, where it looks like the duck is moving, but instead things move in the background.
 

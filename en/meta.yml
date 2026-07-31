@@ -12,11 +12,11 @@ steps:
   - title: Make some waves
   - title: Add rocks
   - title: Rocks on the edge
-  - title: Make the rocks drift
-  - title: Stop at the rocks
-  - title: Clear the rocks off-screen
-  - title: Collect the ducks
-  - title: Add the hook
+  - title: Move the rocks
+  - title: Clear the rocks
+  - title: Block the duck
+  - title: Collectables
+  - title: Add a hazard
     completion:
       - internal
   - title: 'Challenge: add ripples'

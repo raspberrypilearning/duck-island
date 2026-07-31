@@ -1,50 +1,79 @@
-## Stop at the rocks
+## Clear the rocks
 
-Right now your duck swims straight through the rocks. In this step, you'll make the rocks block its path. 
-
-> [!TASK]
->
-> ![The duck sprite.](images/player-sprite.png){:width="150"}
->
-> Make four variables: `block right`{:class="block3variables"}, `block left`{:class="block3variables"}, `block up`{:class="block3variables"}, and `block down`{:class="block3variables"}. Untick their checkboxes so they don't show on the stage.
+In this step, you'll delete each rock once it drifts off the stage, so your game keeps running smoothly. You'll build this as a `disappear`{:class="block3custom"} block.
 
 > [!TASK]
 >
-> On your `player` sprite, under the switch costume, add an `if () else`{:class="block3control"} block with a `touching (obstacle v)?`{:class="block3sensing"} check inside. Set that direction's block variable to 1 if it's touching a rock, otherwise 0.
+> ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> Here's the `right arrow`{:class="block3sensing"} one — do the same for left, up, and down.
+> Select **Make a Block** and name it `disappear`{:class="block3custom"}.
+
+> [!TASK]
+>
+> Under `define disappear`{:class="block3custom"}, add an `if () then`{:class="block3control"} with `delete this clone`{:class="block3control"} inside.
 >
 > ```blocks3
-> if <key (right arrow v) pressed?> then
-> switch costume to (right v)
-> +if <touching (obstacle v)?> then
-> set [block right v] to (1)
-> else
-> set [block right v] to (0)
-> end
+> define disappear
+> if <> then
+> delete this clone
 > end
 > ```
 
 > [!TASK]
 >
-> Now go to your `rock` sprite. Make each rock only drift when that direction isn't blocked. Add `and (block ...) = (0)` to each `if`{:class="block3control"} in the drift loop.
+> Drag an `and`{:class="block3operators"} block into the `if`{:class="block3control"}. In the left side, put a `key (right arrow v) pressed?`{:class="block3sensing"}.
+>
+> ```blocks3
+> define disappear
+> if <<key (right arrow v) pressed?> and <>> then
+> delete this clone
+> end
+> ```
+
+> [!TASK]
+>
+> In the right side of the `and`{:class="block3operators"}, drag a `() < ()`{:class="block3operators"} block. Put `x position`{:class="block3motion"} on the left and `-240` on the right.
+>
+> ```blocks3
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
+> delete this clone
+> end
+> ```
+
+> [!TASK]
+>
+> Call your `disappear`{:class="block3custom"} block under `move`{:class="block3custom"} in the clone loop.
 >
 > ```blocks3
 > when I start as a clone
+> appear
 > forever
-> if <<key (right arrow v) pressed?> and <(block right) = (0)>> then
-> change x by ((0) - (rock speed))
-> end
-> if <<key (left arrow v) pressed?> and <(block left) = (0)>> then
-> change x by (rock speed)
-> end
-> if <<key (down arrow v) pressed?> and <(block down) = (0)>> then
-> change y by (rock speed)
-> end
-> if <<key (up arrow v) pressed?> and <(block up) = (0)>> then
-> change y by ((0) - (rock speed))
-> end
+> move
+> +disappear
 > end
 > ```
 
-**Test:** Swim into a rock. Your duck stops instead of sliding through it.
+**Test:** Swim to the right. When rocks reach the left of the stage, they disappear.
+
+> [!TASK]
+>
+> Duplicate the `if`{:class="block3control"} block for the other three edges, changing the key, the x/y, and the numbers.
+>
+> ```blocks3
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
+> delete this clone
+> end
+> +if <<key (left arrow v) pressed?> and <(x position) > (240)>> then
+> delete this clone
+> end
+> +if <<key (up arrow v) pressed?> and <(y position) < (-180)>> then
+> delete this clone
+> end
+> +if <<key (down arrow v) pressed?> and <(y position) > (180)>> then
+> delete this clone
+> end
+> ```
+
+**Test:** Swim around for a while. Rocks disappear once they drift off any edge, and your game keeps running smoothly.

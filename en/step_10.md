@@ -1,35 +1,86 @@
-## Collect the ducks
+## Collectables
 
-In this step, you'll add ducks to collect for points.
+In this step, you'll collect the lost ducks for points. You can duplicate the rock sprite and reuse its blocks.
 
 > [!TASK]
 >
 > ![The collectable duck sprite.](images/colletable-sprite.png){:width="150"}
 >
-> Right-click your `rock` sprite and duplicate it. Rename the copy `collectable duck` and give it a duck costume. It already knows how to appear and drift — you'll just change what happens when your `player` reaches it.
+> Right-click your `rock` sprite and duplicate it. Rename the copy `collectable` and give it a duck costume — copy one over from your duck sprite, or make your own.
+>
+> ![Duplicating a sprite.](images/duplicate-sprite.gif){:width="450"}
 
 > [!TASK]
 >
-> Make a `Score`{:class="block3variables"} variable and tick its checkbox so it shows on the stage. In the collectable duck's `green flag`{:class="block3events"} script, set the score to 0 at the start.
+> In `when I start as a clone`{:class="block3control"}, under the `disappear`{:class="block3custom"} block, add an `if () then`{:class="block3control"} and drag in a `touching () ?`{:class="block3sensing"}. Choose **player** from the drop-down.
 >
 > ```blocks3
-> when green flag clicked
-> set [rock speed v] to (3)
-> +set [Score v] to (0)
-> hide
-> go to back layer
+> when I start as a clone
+> appear
+> forever
+> move
+> disappear
+> +if <touching (player v)?> then
+> end
+> end
 > ```
 
 > [!TASK]
 >
-> In its `when I start as a clone`{:class="block3control"} loop, add a check: if it's `touching (player v)?`{:class="block3sensing"}, add to the score, play a sound, and delete the clone.
+> Make a variable called `score`{:class="block3variables"} and tick its checkbox so it shows on the stage.
+
+> [!TASK]
+>
+> Add a `change score by (1)`{:class="block3variables"} so the score goes up when a duck is collected.
 >
 > ```blocks3
-> when I start as a clone
 > forever
-> +if <touching (player v)?> then
-> +change [Score v] by (1)
+> move
+> disappear
+> if <touching (player v)?> then
+> +change [score v] by (1)
+> end
+> end
+> ```
+
+> [!TASK]
+>
+> Make a sound for collecting a duck. Open the **Sounds** tab.
+>
+> ![The Sounds tab.](images/sounds-tab.png){:width="300"}
+
+> [!TASK]
+>
+> Click **Choose a Sound** and pick one from the library.
+>
+> ![Choosing a sound.](images/sounds-choose.png){:width="300"}
+
+> [!TASK]
+>
+> Back in the **Code** tab, add a `start sound ()`{:class="block3sound"} block and choose your sound.
+>
+> ```blocks3
+> forever
+> move
+> disappear
+> if <touching (player v)?> then
+> change [score v] by (1)
 > +start sound (Glug v)
+> end
+> end
+> ```
+
+> [!TASK]
+>
+> Finally, `delete this clone`{:class="block3control"} so the duck looks like it's been collected.
+>
+> ```blocks3
+> forever
+> move
+> disappear
+> if <touching (player v)?> then
+> change [score v] by (1)
+> start sound (Glug v)
 > +delete this clone
 > end
 > end
