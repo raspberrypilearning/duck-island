@@ -6,7 +6,7 @@ The rocks need to look like they're drifting in from off the stage. In this step
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> In your `appear`{:class="block3myblocks"} block, add an `if then`{:class="block3control"} with a `key pressed`{:class="block3sensing"} check set to the **right arrow**.
+> In your `appear`{:class="block3myblocks"} block, add an `if () then`{:class="block3control"} with a `key (right arrow v) pressed?`{:class="block3sensing"} check, and set the rock's x to 240 so it starts at the right edge.
 >
 > ```blocks3
 > define appear
@@ -14,20 +14,7 @@ The rocks need to look like they're drifting in from off the stage. In this step
 > set size to (pick random (20) to (100)) %
 > show
 > +if <key (right arrow v) pressed?> then
-> end
-> ```
-
-> [!TASK]
->
-> Set the rock's x to 240 so it starts at the right edge.
->
-> ```blocks3
-> define appear
-> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-> set size to (pick random (20) to (100)) %
-> show
-> if <key (right arrow v) pressed?> then
-> +set x to (240)
+> set x to (240)
 > end
 > ```
 

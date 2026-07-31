@@ -18,7 +18,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> A hazard shouldn't score points. Right-click the `change score by 1`{:class="block3variables"} block and delete it.
+> A hazard shouldn't score points. Right-click the `change score by (1)`{:class="block3variables"} block and delete it.
 
 > [!TASK]
 >
@@ -34,7 +34,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> Back in the **Code** tab, change the sound in the `touching player?`{:class="block3sensing"} check to your new one.
+> Back in the **Code** tab, change the sound in the `touching (player v)?`{:class="block3sensing"} check to your new one.
 >
 > ```blocks3
 > when I start as a clone
@@ -51,7 +51,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> Now make the game end when the hazard catches your duck. Swap the `delete this clone`{:class="block3control"} for a `stop all`{:class="block3control"}, and add a short `wait`{:class="block3control"} so the sound can finish.
+> Now make the game end when the hazard catches your duck. Swap the `delete this clone`{:class="block3control"} for a `stop (all v)`{:class="block3control"}, and add a short `wait`{:class="block3control"} so the sound can finish.
 >
 > ```blocks3
 > if <touching (player v)?> then
@@ -65,7 +65,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> To make it harder, send each hazard off in a random direction. In your `appear`{:class="block3myblocks"} block add a `point in direction`{:class="block3motion"} with a random angle, and add a `move 3.2 steps`{:class="block3motion"} to the clone loop.
+> To make it harder, send each hazard off in a random direction. In your `appear`{:class="block3myblocks"} block add a `point in direction ()`{:class="block3motion"} with a random angle, and add a `move (3.2) steps`{:class="block3motion"} to the clone loop.
 >
 > ```blocks3
 > define appear
@@ -77,6 +77,6 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TIP]
 >
-> The example uses `pick random -180 to 180`{:class="block3operators"} for the angle, but you can experiment with the range.
+> The example uses `pick random (-180) to (180)`{:class="block3operators"} for the angle, but you can experiment with the range.
 
 **Test:** The hazards drift around, and the game ends when your duck hits one.

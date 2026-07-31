@@ -26,28 +26,18 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 
 > [!TASK]
 >
-> Under `define move`{:class="block3myblocks"}, add an `if then`{:class="block3control"} with a `key pressed`{:class="block3sensing"} check set to the **right arrow**.
+> Under `define move`{:class="block3myblocks"}, add an `if () then`{:class="block3control"} with a `key (right arrow v) pressed?`{:class="block3sensing"} check. Move the rock with `change x by ()`{:class="block3motion"}, taking **rock speed** away from 0 so it slides the opposite way to the arrow.
 >
 > ```blocks3
 > define move
 > if <key (right arrow v) pressed?> then
+> change x by ((0) - (rock speed))
 > end
 > ```
 
 > [!TASK]
 >
-> Move the rock with `change x by`{:class="block3motion"}, taking **rock speed** away from 0 so it slides the opposite way to the arrow.
->
-> ```blocks3
-> define move
-> if <key (right arrow v) pressed?> then
-> +change x by ((0) - (rock speed))
-> end
-> ```
-
-> [!TASK]
->
-> Add a `forever`{:class="block3control"} loop at the bottom of `when I start as a clone`{:class="block3control"}, and drag your `move`{:class="block3myblocks"} block inside it.
+> Call your `move`{:class="block3myblocks"} block in a `forever`{:class="block3control"} loop at the bottom of `when I start as a clone`{:class="block3control"}.
 >
 > ```blocks3
 > when I start as a clone

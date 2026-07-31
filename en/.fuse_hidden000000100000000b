@@ -31,7 +31,7 @@ In this step you will make the duck look like it is moving with the arrow keys.
 
 > [!TASK]
 >
-> Make the duck look like it's moving by turning it to face the way it swims. Add a `forever`{:class="block3control"} loop with an `if then`{:class="block3control"} block inside, and drop in a `key pressed`{:class="block3sensing"} block set to **left arrow**.
+> Make the duck look like it's moving by turning it to face the way it swims. Add a `forever`{:class="block3control"} loop with an `if () then`{:class="block3control"} block inside, and drop in a `key () pressed?`{:class="block3sensing"} block set to **left arrow**.
 >
 > ```blocks3
 > when green flag clicked
@@ -46,7 +46,7 @@ In this step you will make the duck look like it is moving with the arrow keys.
 
 > [!TASK]
 >
-> Inside the `if`{:class="block3control"}, add a `switch costume to left`{:class="block3looks"} so the duck faces left.
+> Inside the `if`{:class="block3control"}, add a `switch costume to (left v)`{:class="block3looks"} so the duck faces left.
 >
 > ```blocks3
 > forever

@@ -12,7 +12,7 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 
 > [!TASK]
 >
-> In `when I start as a clone`{:class="block3control"}, under the `disappear`{:class="block3myblocks"} block, add an `if then`{:class="block3control"} and drag in a `touching?`{:class="block3sensing"}. Choose **player** from the drop-down.
+> In `when I start as a clone`{:class="block3control"}, under the `disappear`{:class="block3myblocks"} block, add an `if () then`{:class="block3control"} and drag in a `touching () ?`{:class="block3sensing"}. Choose **player** from the drop-down.
 >
 > ```blocks3
 > when I start as a clone
@@ -31,7 +31,7 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 
 > [!TASK]
 >
-> Add a `change score by 1`{:class="block3variables"} so the score goes up when a duck is collected.
+> Add a `change score by (1)`{:class="block3variables"} so the score goes up when a duck is collected.
 >
 > ```blocks3
 > forever
@@ -57,7 +57,7 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 
 > [!TASK]
 >
-> Back in the **Code** tab, add a `start sound`{:class="block3sound"} block and choose your sound.
+> Back in the **Code** tab, add a `start sound ()`{:class="block3sound"} block and choose your sound.
 >
 > ```blocks3
 > forever

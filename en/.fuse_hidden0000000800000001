@@ -1,16 +1,16 @@
 ## Move the rocks
 
-The rocks move across the stage, which makes it look like your duck is swimming. You'll build the movement as a `move`{:class="block3myblocks"} block to keep the code tidy.
+The rocks move across the stage, which makes it look like your duck is swimming. You'll build the movement as a `move`{:class="block3custom"} block to keep the code tidy.
 
 > [!TASK]
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> Select **Make a Block** and name it `move`{:class="block3myblocks"}.
+> Select **Make a Block** and name it `move`{:class="block3custom"}.
 
 > [!TASK]
 >
-> The rocks move at a speed you can change. Make a variable called **rock speed** and set it to 3 at the start of the `green flag`{:class="block3events"} script.
+> The rocks move at a speed you can change. Make a variable called `rock speed`{:class="block3variables"} and set it to 3 at the start of the `green flag`{:class="block3events"} script.
 >
 > ```blocks3
 > when green flag clicked
@@ -26,28 +26,18 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 
 > [!TASK]
 >
-> Under `define move`{:class="block3myblocks"}, add an `if then`{:class="block3control"} with a `key pressed`{:class="block3sensing"} check set to the **right arrow**.
+> Under `define move`{:class="block3custom"}, add an `if () then`{:class="block3control"} with a `key (right arrow v) pressed?`{:class="block3sensing"} check. Move the rock with `change x by ()`{:class="block3motion"}, taking `rock speed`{:class="block3variables"} away from 0 so it slides the opposite way to the arrow.
 >
 > ```blocks3
 > define move
 > if <key (right arrow v) pressed?> then
+> change x by ((0) - (rock speed))
 > end
 > ```
 
 > [!TASK]
 >
-> Move the rock with `change x by`{:class="block3motion"}, taking **rock speed** away from 0 so it slides the opposite way to the arrow.
->
-> ```blocks3
-> define move
-> if <key (right arrow v) pressed?> then
-> +change x by ((0) - (rock speed))
-> end
-> ```
-
-> [!TASK]
->
-> Add a `forever`{:class="block3control"} loop at the bottom of `when I start as a clone`{:class="block3control"}, and drag your `move`{:class="block3myblocks"} block inside it.
+> Call your `move`{:class="block3custom"} block in a `forever`{:class="block3control"} loop at the bottom of `when I start as a clone`{:class="block3control"}.
 >
 > ```blocks3
 > when I start as a clone
@@ -61,7 +51,7 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 
 > [!TASK]
 >
-> Now add the other three directions to the same `move`{:class="block3myblocks"} block.
+> Now add the other three directions to the same `move`{:class="block3custom"} block.
 >
 > ```blocks3
 > define move

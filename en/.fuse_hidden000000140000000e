@@ -56,7 +56,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 
 > [!TASK]
 >
-> Add an `if else`{:class="block3control"} block inside your `forever`{:class="block3control"} loop, and drag the idle blocks into the `else`{:class="block3control"} part.
+> Add an `if () else`{:class="block3control"} block inside your `forever`{:class="block3control"} loop, and drag the idle blocks into the `else`{:class="block3control"} part.
 >
 > ```blocks3
 > when green flag clicked
@@ -75,7 +75,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 
 > [!TASK]
 >
-> Drag a `key pressed`{:class="block3sensing"} block into the `if`{:class="block3control"} and choose **any**.
+> Drag a `key () pressed?`{:class="block3sensing"} block into the `if`{:class="block3control"} and choose **any**.
 >
 > ```blocks3
 > when green flag clicked
@@ -115,7 +115,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 
 > [!TASK]
 >
-> Finally, add a `switch costume to costume1`{:class="block3looks"} at the top of the `else`{:class="block3control"}, so the idle wave always starts from the smallest circle.
+> Finally, add a `switch costume to (costume1 v)`{:class="block3looks"} at the top of the `else`{:class="block3control"}, so the idle wave always starts from the smallest circle.
 >
 > ```blocks3
 > when green flag clicked

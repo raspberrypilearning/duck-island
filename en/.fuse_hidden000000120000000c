@@ -1,16 +1,16 @@
 ## Clear the rocks
 
-In this step, you'll delete each rock once it drifts off the stage, so your game keeps running smoothly. You'll build this as a `disappear`{:class="block3myblocks"} block.
+In this step, you'll delete each rock once it drifts off the stage, so your game keeps running smoothly. You'll build this as a `disappear`{:class="block3custom"} block.
 
 > [!TASK]
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> Select **Make a Block** and name it `disappear`{:class="block3myblocks"}.
+> Select **Make a Block** and name it `disappear`{:class="block3custom"}.
 
 > [!TASK]
 >
-> Under `define disappear`{:class="block3myblocks"}, add an `if then`{:class="block3control"} with `delete this clone`{:class="block3control"} inside.
+> Under `define disappear`{:class="block3custom"}, add an `if () then`{:class="block3control"} with `delete this clone`{:class="block3control"} inside.
 >
 > ```blocks3
 > define disappear
@@ -21,7 +21,7 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 
 > [!TASK]
 >
-> Drag an `and`{:class="block3operators"} block into the `if`{:class="block3control"}. In the left side, put a `key pressed`{:class="block3sensing"}.
+> Drag an `and`{:class="block3operators"} block into the `if`{:class="block3control"}. In the left side, put a `key (right arrow v) pressed?`{:class="block3sensing"}.
 >
 > ```blocks3
 > define disappear
@@ -32,7 +32,7 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 
 > [!TASK]
 >
-> In the right side of the `and`{:class="block3operators"}, drag a `less than`{:class="block3operators"} block. Put `x position`{:class="block3motion"} on the left and `-240` on the right.
+> In the right side of the `and`{:class="block3operators"}, drag a `() < ()`{:class="block3operators"} block. Put `x position`{:class="block3motion"} on the left and `-240` on the right.
 >
 > ```blocks3
 > define disappear
@@ -43,7 +43,7 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 
 > [!TASK]
 >
-> Under `move`{:class="block3myblocks"} in the clone loop, drag in your `disappear`{:class="block3myblocks"} block.
+> Call your `disappear`{:class="block3custom"} block under `move`{:class="block3custom"} in the clone loop.
 >
 > ```blocks3
 > when I start as a clone

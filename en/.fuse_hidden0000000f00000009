@@ -26,7 +26,7 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 
 > [!TASK]
 >
-> Each rock needs to appear at a random spot. Select **Make a Block**, name it `appear`{:class="block3myblocks"}, then build it under `define appear`{:class="block3myblocks"}.
+> Each rock needs to appear at a random spot. Select **Make a Block**, name it `appear`{:class="block3custom"}, then build it under `define appear`{:class="block3custom"}.
 >
 > ```blocks3
 > define appear
@@ -36,7 +36,16 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 
 > [!TASK]
 >
-> You can also give each rock a random size. Add it to your `appear`{:class="block3myblocks"} block.
+> In `when I start as a clone`{:class="block3control"}, call your `appear`{:class="block3custom"} block.
+>
+> ```blocks3
+> when I start as a clone
+> appear
+> ```
+
+> [!TASK]
+>
+> You can also give each rock a random size. Add it to your `appear`{:class="block3custom"} block.
 >
 > ```blocks3
 > define appear
@@ -45,22 +54,13 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 > show
 > ```
 
-> [!TASK]
->
-> In `when I start as a clone`{:class="block3control"}, drag in your `appear`{:class="block3myblocks"} block.
->
-> ```blocks3
-> when I start as a clone
-> appear
-> ```
-
 **Test:** Click the green flag a few times. A rock appears at a different size and spot each time.
 
 The rocks need to appear while the duck is swimming using the arrow keys. To do that, trigger the clone with a key press instead of the green flag.
 
 > [!TASK]
 >
-> Wrap the `create clone of myself`{:class="block3control"} in an `if then`{:class="block3control"} block, and drop in a `key pressed`{:class="block3sensing"} set to **any**.
+> Wrap the `create clone of (myself v)`{:class="block3control"} in an `if () then`{:class="block3control"} block, and drop in a `key () pressed?`{:class="block3sensing"} set to **any**.
 >
 > ```blocks3
 > when green flag clicked
