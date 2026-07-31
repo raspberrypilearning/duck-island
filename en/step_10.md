@@ -6,13 +6,15 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > ![The collectable duck sprite.](images/colletable-sprite.png){:width="150"}
 >
-> Right-click your `rock` sprite and duplicate it. Rename the copy `collectable`.
+> Right-click your **rock** sprite and duplicate it. Rename the copy **collectable**.
 >
 > ![Duplicating a sprite.](images/duplicate-sprite.gif){:width="450"}
 
 > [!TASK]
 >
 > Give it a duck costume — copy one over from your duck sprite, or make a different one of your own.
+> 
+> ![Copying costume.](images/copy-cosutume.gif){:width="450"}
 
 > [!TASK]
 >
@@ -32,6 +34,8 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 > [!TASK]
 >
 > Make a variable called **score** and tick its checkbox so it shows on the stage.
+>
+> ![Variable UI](images/variable.png){:width="300"}
 
 > [!TASK]
 >
@@ -51,13 +55,13 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > Make a sound for collecting a duck. Open the **Sounds** tab.
 >
-> ![The Sounds tab.](images/sounds-tab.png){:width="300"}
+> ![The Sounds tab.](images/sounds-tab.png){:width="450"}
 
 > [!TASK]
 >
 > Click **Choose a Sound** and pick one from the library.
 >
-> ![Choosing a sound.](images/sounds-choose.png){:width="300"}
+> ![Choosing a sound.](images/sounds-choose.png){:width="250"}
 
 > [!TASK]
 >

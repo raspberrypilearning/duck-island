@@ -13,10 +13,8 @@ To make the movement look like it's really in water, you can add a wave that cha
 > ![The wave sprite.](images/ripple-sprite.png){:width="150"}
 >
 > Use the paint tools to draw a circle. This is the shape of your wave.
-
-> [!TASK]
 >
-> Resize it so it's just a bit bigger than your duck.
+> Make it a bit bigger than your duck.
 >
 > ![Resizing the wave.](images/resize-wave.gif){:width="450"}
 
@@ -30,41 +28,12 @@ To make the movement look like it's really in water, you can add a wave that cha
 > go to x: (0) y: (-20)
 > ```
 
-> [!TASK]
->
-> Start with the idle movement. Add a `forever`{:class="block3control"} loop that gently moves the wave the opposite way to the duck.
->
-> ```blocks3
-> when green flag clicked
-> go to [back v] layer
-> go to x: (0) y: (-20)
-> +forever
-> change y by (-1)
-> wait (0.3) seconds
-> change y by (1)
-> wait (0.3) seconds
-> end
-> ```
-
-**Test:** The wave bobs the opposite way to your duck, so it looks like it's floating.
-
-Now make an animated version for when the duck moves.
 
 > [!TASK]
 >
-> Select the **Costumes** tab.
+> Start with idle movement.
 >
-> ![The Costumes tab.](images/tab_costumes.png){:width="250"}
-
-> [!TASK]
->
-> Duplicate the circle and make the copy a bit bigger, then duplicate again and make it bigger still — three costumes in all.
->
-> ![Demo of making the wave costumes.](images/wave-costumes.gif){:width="450"}
-
-> [!TASK]
->
-> Add an `if else`{:class="block3control"} block inside your `forever`{:class="block3control"} loop, and drag the idle blocks into the `else`{:class="block3control"} part.
+> Add an `if else`{:class="block3control"} block inside a `forever`{:class="block3control"} loop. Add blocks into the `else`{:class="block3control"} part that gently moves the wave the opposite way to the duck.
 >
 > ```blocks3
 > when green flag clicked
@@ -80,6 +49,23 @@ Now make an animated version for when the duck moves.
 > end
 > end
 > ```
+
+**Test:** The wave bobs the opposite way to your duck, so it looks like it's floating.
+
+Now make an animated version for when the duck moves.
+
+> [!TASK]
+>
+> Select the **Costumes** tab.
+>
+> ![The Costumes tab.](images/tab_costumes.png){:width="450"}
+
+> [!TASK]
+>
+> **Duplicate** the circle and make the new one a bit bigger, then duplicate again and make it bigger still — three costumes in all.
+>
+> ![Demo of making the wave costumes.](images/wave-costumes.gif){:width="450"}
+
 
 > [!TASK]
 >

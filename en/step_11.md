@@ -32,7 +32,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 >
 > Click **Choose a Sound** and pick one from the library — the hook uses a "Rip" noise.
 >
-> ![Choosing a sound.](images/sounds-choose.png){:width="450"}
+> ![Choosing a sound.](images/sounds-choose.png){:width="250"}
 
 > [!TASK]
 >
@@ -67,7 +67,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> To make it harder, send each hazard off in a random direction. In your `appear`{:class="block3myblocks"} block add a `point in direction`{:class="block3motion"} with a random angle, and add a `move 3.2 steps`{:class="block3motion"} to the clone loop.
+> To make it harder, send each hazard off in a random direction. In your `appear`{:class="block3myblocks"} block add a `point in direction`{:class="block3motion"} with `random`{:class="block3operators"} angles.
 >
 > ```blocks3
 > define appear
@@ -79,6 +79,6 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TIP]
 >
-> The example uses `pick random -180 to 180`{:class="block3operators"} for the angle, but you can experiment with the range.
+> The example uses `-180` to `180` for the angle, but you can experiment with the range.
 
 **Test:** The hazards drift around, and the game ends when your duck hits one.
