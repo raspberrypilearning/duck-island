@@ -6,7 +6,7 @@ Right now your duck swims straight through the rocks. In this step, you'll make 
 >
 > ![The player sprite.](images/player-sprite.png){:width="150"}
 >
-> In the **player** sprite, make four variables: **right blocked**, **left blocked**, **up blocked**, and **down blocked**. Untick their checkboxes so they don't show on the stage.
+> In the **player** sprite, make four variables: `right blocked`{:class="block3variables"}, `left blocked`{:class="block3variables"}, `up blocked`{:class="block3variables"}, and `down blocked`{:class="block3variables"}. Untick their checkboxes so they don't show on the stage.
 >
 > ![Making a variable.](images/make-variable.png){:width="250"}
 
@@ -82,7 +82,7 @@ end
 
 > [!TASK]
 >
-> Do the same for the other three arrow keys, using **left blocked**, **up blocked**, and **down blocked**.
+> Do the same for the other three arrow keys, using `left blocked`{:class="block3variables"}, `up blocked`{:class="block3variables"}, and `down blocked`{:class="block3variables"}.
 
 Now add the block variables to the rock, so it stops moving when it's blocked.
 
@@ -112,7 +112,7 @@ Now add the block variables to the rock, so it stops moving when it's blocked.
 
 > [!TASK]
 >
-> Put **right blocked** on the left and `no` on the right, so the rock only moves when the right arrow is pressed and the right isn't blocked.
+> Put `right blocked`{:class="block3variables"} on the left and `no` on the right, so the rock only moves when the right arrow is pressed and the right isn't blocked.
 >
 > ```blocks3
 > define move
@@ -141,4 +141,10 @@ Now add the block variables to the rock, so it stops moving when it's blocked.
 > end
 > ```
 
-**Test:** Swim into a rock. Your duck stops instead of sliding through it.
+**Test:** Swim into a rock. Your duck stops instead of swimming over it.
+
+> [!DEBUG]
+>
+> The `wait 0.5 seconds`{:class="block3control"} gives a short window to steer away after a bump, but if your duck gets stuck on a rock and can't move off it, that's because the two costumes overlap. 
+>
+> Try moving the centre point of your duck's costume in the paint editor, or making the sprite a little smaller, and test until the duck can always swim back out of a collision.

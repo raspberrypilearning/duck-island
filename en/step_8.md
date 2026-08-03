@@ -97,3 +97,7 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 > ```
 
 **Test:** Swim around for a while. Rocks disappear once they drift off any edge, and your game keeps running smoothly.
+
+> [!DEBUG]
+>
+> Depending on the size and position of your obstacle costume, you might need to adjust the edge numbers. If your rocks vanish too soon, or stick to the edge, try slightly smaller or larger numbers (for example `-220` or `-260` instead of `-240`).

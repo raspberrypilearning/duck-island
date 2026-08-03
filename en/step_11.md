@@ -56,10 +56,16 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 > Now make the game end when the hazard catches your duck. Swap the `delete this clone`{:class="block3control"} for a `stop all`{:class="block3control"}, and add a short `wait`{:class="block3control"} so the sound can finish.
 >
 > ```blocks3
+> when I start as a clone
+> appear
+> forever
+> move
+> disappear
 > if <touching (player v)?> then
 > start sound (Rip v)
 > +wait (0.2) seconds
 > +stop [all v]
+> end
 > end
 > ```
 
@@ -80,5 +86,24 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 > [!TIP]
 >
 > The example uses `-180` to `180` for the angle, but you can experiment with the range.
+
+> [!TASK]
+>
+> `point in direction`{:class="block3motion"} only turns the hazard — to make it drift that way, add a `move`{:class="block3motion"} block set to `3` steps in the clone loop.
+>
+> ```blocks3
+> when I start as a clone
+> appear
+> forever
+> move
+> disappear
+> if <touching (player v)?> then
+> start sound (Rip v)
+> wait (0.2) seconds
+> stop [all v]
+> end
+> +move (3) steps
+> end
+> ```
 
 **Test:** The hazards drift around, and the game ends when your duck hits one.

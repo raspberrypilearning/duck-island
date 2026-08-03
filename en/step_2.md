@@ -4,7 +4,7 @@ In this step you will make the duck look like it is moving with the arrow keys.
 
 > [!TASK]
 >
-> Open the [starter project](https://scratch.mit.edu/projects/1366224959/editor){:target="_blank"} and select **remix**. Your duck is already on the stage.
+> Open the [starter project](https://scratch.mit.edu/projects/1366224959/editor){:target="_blank"} and select **remix**. Your duck is already on the stage — its sprite is called **player**.
 >
 > ![The Costumes tab.](images/remix.png){:width="450"}
 
