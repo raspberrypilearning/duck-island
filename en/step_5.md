@@ -6,11 +6,18 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 >
 > Add a new sprite for your rocks — draw one with the paint tools, or choose one from the library.
 >
-> ![The Choose a Sprite menu.](images/choose-sprite.png){:width="300"}
+> ![The Choose a Sprite menu.](images/choose-sprite.png){:width="250"}
+
+> [!TASK]
+>
+> Name your sprite **obstacle**
+>
+> ![The Choose a Sprite menu.](images/obstacle-name.png){:width="350"}
+
 
 > [!TIP]
 >
-> The rocks in the example are the rock emoji, copied and pasted into a text box in the Paint tab.
+> The rocks in the example are the rock emoji 🪨, copied and pasted into a text box in the **Paint** tab.
 
 > [!TASK]
 >
@@ -29,6 +36,14 @@ In this step, you'll add rocks — obstacles your duck has to swim around. The r
 > Each rock needs to appear at a random spot. Select **Make a Block** and name it `appear`{:class="block3myblocks"}.
 >
 > ![Making a block.](images/make-block.png){:width="250"}
+
+> [!TASK]
+>
+> In the `My Blocks`{:class="block3myblocks"} menu, drag over a `define appear`{:class="block3myblocks"}.
+>
+> ```blocks3
+> define appear
+> ```
 
 > [!TASK]
 >
@@ -90,9 +105,14 @@ The rocks need to appear while the duck is swimming using the arrow keys. To do 
 > end
 > ```
 
+**Test:** Press the arrow keys and see lots of rocks appear at random spots and sizes.
+
+To limit the number of rocks being cloned, add a small delay at the end. This is how often the rocks will appear. 
+
+
 > [!TASK]
 >
-> Add a `wait`{:class="block3control"} with a `pick random`{:class="block3operators"}. This is how often the rocks will appear.
+> Add a `wait`{:class="block3control"} with a `pick random`{:class="block3operators"}. 
 >
 > ```blocks3
 > when green flag clicked

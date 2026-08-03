@@ -4,7 +4,9 @@ In this step you will make the duck look like it is moving with the arrow keys.
 
 > [!TASK]
 >
-> Open the [starter project](https://scratch.mit.edu/projects/1365698888/editor){:target="_blank"}. Your duck is already on the stage.
+> Open the [starter project](https://scratch.mit.edu/projects/1366224959/editor){:target="_blank"} and select **remix**. Your duck is already on the stage.
+>
+> ![The Costumes tab.](images/remix.png){:width="450"}
 
 > [!TASK]
 >
@@ -20,7 +22,7 @@ In this step you will make the duck look like it is moving with the arrow keys.
 >
 > ![The player sprite.](images/player-sprite.png){:width="150"}
 >
-> First set up the starting position. Add a `green flag`{:class="block3events"} block. Bring the duck to the `front layer`{:class="block3looks"}, `switch costume`{:class="block3looks"} to down, and put it in the middle of the stage.
+> Go back to the **code tab** and set up the starting position. Add a `green flag`{:class="block3events"} block. Bring the duck to the `front layer`{:class="block3looks"}, `switch costume`{:class="block3looks"} to down, and put it in the middle of the stage.
 >
 > ```blocks3
 > when green flag clicked

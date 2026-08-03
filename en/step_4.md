@@ -4,9 +4,16 @@ To make the movement look like it's really in water, you can add a wave that cha
 
 > [!TASK]
 >
-> Make a new sprite. Click the **Paint** new sprite icon and name it `wave`.
+> Make a new sprite with the **Paint** sprite icon.
 >
 > ![Painting a new sprite.](images/sprite-paint.png){:width="250"}
+
+> [!TASK]
+>
+> Name your sprite **wave**.
+>
+> ![Painting a new sprite.](images/name-wave.png){:width="450"}
+
 
 > [!TASK]
 >
@@ -14,9 +21,9 @@ To make the movement look like it's really in water, you can add a wave that cha
 >
 > Use the paint tools to draw a circle. This is the shape of your wave.
 >
-> Make it a bit bigger than your duck.
+> Resize it so it is a bit bigger than your duck. Use a white or light colour for the outline, and remove the fill.
 >
-> ![Resizing the wave.](images/paint-wave.gif){:width="450"}
+> ![Resizing the wave.](images/paint-wave.gif){:width="350"}
 
 > [!TASK]
 >

@@ -6,12 +6,6 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> Select **Make a Block** and name it `move`{:class="block3myblocks"}.
->
-> ![Making a block.](images/make-block.png){:width="250"}
-
-> [!TASK]
->
 > Make a variable called **rock speed**.
 >
 > ![Making a variable.](images/make-variable.png){:width="250"}
@@ -31,6 +25,12 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 > wait (pick random (1) to (3)) seconds
 > end
 > ```
+
+> [!TASK]
+>
+> Select **Make a Block** and name it `move`{:class="block3myblocks"}.
+>
+> ![Making a block.](images/make-block.png){:width="250"}
 
 > [!TASK]
 >
@@ -55,7 +55,7 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 
 > [!TASK]
 >
-> Add a `forever`{:class="block3control"} loop at the bottom of `when I start as a clone`{:class="block3control"}, and drag your `move`{:class="block3myblocks"} block inside it.
+> Add a `forever`{:class="block3control"} loop at the bottom of `when I start as a clone`{:class="block3control"}. Go to the `My Blocks`{:class="block3myblocks"} menu again, and drag your `move`{:class="block3myblocks"} block inside it.
 >
 > ```blocks3
 > when I start as a clone

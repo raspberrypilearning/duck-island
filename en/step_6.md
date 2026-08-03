@@ -6,7 +6,7 @@ In this step, you'll make each rock starts at the edge the duck is swimming towa
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> Add an `if then`{:class="block3control"} with a `key pressed`{:class="block3sensing"} check set to the **right arrow** to the bottom of the `appear`{:class="block3myblocks"} block,
+> Add an `if then`{:class="block3control"} with a `key pressed`{:class="block3sensing"} check set to the **right arrow** to the bottom of the `define appear`{:class="block3myblocks"} block,
 >
 > ```blocks3
 > define appear
