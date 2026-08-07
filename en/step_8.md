@@ -78,7 +78,7 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 
 > [!TASK]
 >
-> Duplicate the `if`{:class="block3control"} block for the other three edges, changing the key, the x/y, and the numbers.
+> Duplicate the `if`{:class="block3control"} block for the other 3 edges, changing the key, the x/y, and the numbers.
 >
 > ```blocks3
 > define disappear
@@ -96,7 +96,7 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 > end
 > ```
 
-**Test:** Swim around for a while. Rocks disappear once they drift off any edge, and your game keeps running smoothly.
+**Test:** Swim around for a while. Rocks should disappear once they drift off any edge, and your game should keep running smoothly.
 
 > [!DEBUG]
 >
