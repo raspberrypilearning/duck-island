@@ -1,6 +1,6 @@
 ## Add a hazard
 
-In this step, you'll add a hazard your duck has to dodge, or it ends the game. The example uses a hook, but it could be other wildlife, sea rubbish, or something else you choose.
+In this step, you'll add a hazard your duck has to dodge, or it ends the game. The example uses a hook, but it could be other wildlife, rubbish in the water, or something else you choose.
 
 > [!TASK]
 >
@@ -106,4 +106,4 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 > end
 > ```
 
-**Test:** The hazards drift around, and the game ends when your duck hits one.
+**Test:** The hazards should drift around, and the game should end when your duck hits one.
