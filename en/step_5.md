@@ -1,6 +1,6 @@
 ## Add rocks
 
-In this step, you'll add rocks — obstacles your duck has to swim around. The rocks move in the background, which makes it look like the duck is swimming.
+In this step, you'll add rocks as obstacles that your duck has to swim around. The rocks move in the background, which makes it look like the duck is swimming.
 
 > [!TASK]
 >
@@ -125,7 +125,7 @@ To limit the number of rocks being cloned, add a small delay at the end. This is
 > end
 > ```
 
-**Test:** Press the arrow keys. Rocks appear at random spots and sizes, with a 1–3 second wait between each one.
+**Test:** Press the arrow keys. Rocks should appear at random spots and sizes, with a 1–3 second wait between each one.
 
 > [!TIP]
 >
