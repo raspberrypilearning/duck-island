@@ -69,7 +69,7 @@ Now make an animated version for when the duck moves.
 
 > [!TASK]
 >
-> **Duplicate** the circle and make the new one a bit bigger, then duplicate again and make it bigger still — three costumes in all.
+> **Duplicate** the circle and make the new one a bit bigger, then duplicate again and make it bigger still — three costumes in total.
 >
 > ![Demo of making the wave costumes.](images/animate-waves.gif){:width="450"}
 
@@ -136,4 +136,4 @@ Now make an animated version for when the duck moves.
 > end
 > ```
 
-**Test:** The wave bobs gently when the duck is still, and animates when it swims.
+**Test:** Make sure the wave bobs gently when the duck is still, and animates when it swims.
