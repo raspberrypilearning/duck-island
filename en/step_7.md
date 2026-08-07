@@ -73,7 +73,7 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 
 > [!TASK]
 >
-> The **right arrow** needs to move the rock the opposite way. Add an `if then`{:class="block3control"} for it, and a `change x by`{:class="block3motion"} — but this time use a `() - ()`{:class="block3operators"} operator to take `rock speed`{:class="block3variables"} away from `0`.
+> The **right arrow** needs to move the rock the opposite way. Add an `if then`{:class="block3control"} for the rock, and a `change x by`{:class="block3motion"} — but this time use a `() - ()`{:class="block3operators"} operator to take `rock speed`{:class="block3variables"} away from `0`.
 >
 > ```blocks3
 > define move
@@ -108,4 +108,4 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 > end
 > ```
 
-**Test:** Hold an arrow key. The rocks slide the right way in every direction — it looks like your duck is swimming.
+**Test:** Hold an arrow key. The rocks should slide the right way in every direction, so it looks like your duck is swimming.
