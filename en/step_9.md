@@ -6,7 +6,7 @@ Right now your duck swims straight through the rocks. In this step, you'll make 
 >
 > ![The player sprite.](images/player-sprite.png){:width="150"}
 >
-> In the **player** sprite, make four variables: `right blocked`{:class="block3variables"}, `left blocked`{:class="block3variables"}, `up blocked`{:class="block3variables"}, and `down blocked`{:class="block3variables"}. Untick their checkboxes so they don't show on the stage.
+> In the **player** sprite, make 4 variables: `right blocked`{:class="block3variables"}, `left blocked`{:class="block3variables"}, `up blocked`{:class="block3variables"}, and `down blocked`{:class="block3variables"}. Untick their checkboxes so they don't show on the stage.
 >
 > ![Making a variable.](images/make-variable.png){:width="250"}
 
@@ -141,10 +141,10 @@ Now add the block variables to the rock, so it stops moving when it's blocked.
 > end
 > ```
 
-**Test:** Swim into a rock. Your duck stops instead of swimming over it.
+**Test:** Swim into a rock. Your duck should stop instead of swimming over it.
 
 > [!DEBUG]
 >
-> The `wait 0.5 seconds`{:class="block3control"} gives a short window to steer away after a bump, but if your duck gets stuck on a rock and can't move off it, that's because the two costumes overlap. 
+> The `wait 0.5 seconds`{:class="block3control"} gives a short window to steer away after a bump, but if your duck gets stuck on a rock and can't move off it, that's because the 2 costumes overlap. 
 >
 > Try moving the centre point of your duck's costume in the paint editor, or making the sprite a little smaller, and test until the duck can always swim back out of a collision.

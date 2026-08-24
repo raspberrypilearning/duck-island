@@ -6,7 +6,7 @@ You've got a working game! Here are some ways to take it further.
 >
 > ### More rock costumes
 >
-> Add a second rock costume so the rocks aren't all identical.
+> Add a second rock costume so the rocks aren't all exactly the same.
 
 > [!TASK]
 >
@@ -22,9 +22,9 @@ You've got a working game! Here are some ways to take it further.
 
 > [!TASK]
 >
-> ### Game over screen
+> ### 'Game over' screen
 >
-> Add a game over screen.
+> Add a 'game over' screen.
 
 > [!TASK]
 >

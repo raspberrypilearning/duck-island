@@ -111,4 +111,4 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 > end
 > ```
 
-**Test:** Swim into a duck. Your score goes up and the duck disappears with a sound.
+**Test:** Swim into a duck. Your score should go up and the duck should disappear with a sound.

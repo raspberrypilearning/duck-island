@@ -1,6 +1,6 @@
 ## Rocks on the edge
 
-In this step, you'll make each rock starts at the edge the duck is swimming towards.
+In this step, you'll make each rock start at the edge the duck is swimming towards.
 
 > [!TASK]
 >
