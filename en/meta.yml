@@ -1,7 +1,7 @@
 title: Duck island
 hero_image: images/banner.png
-description: Swim through a sea of drifting rocks and hooks, dodging them to round up the other lost ducks.
-listed: false
+description: Make a duck-rescue game in this Code Club Arcade project.
+listed: true
 pdf: false
 steps:
   - title: What you will make
