@@ -38,9 +38,9 @@ To make the movement look like it's really in water, you can add a wave that cha
 
 > [!TASK]
 >
-> Start with idle movement.
+> Make the wave move slowly when no keys are pressed.
 >
-> Add an `if else`{:class="block3control"} block inside a `forever`{:class="block3control"} loop. Add blocks into the `else`{:class="block3control"} part that gently moves the wave the opposite way to the duck.
+> Add an `if else`{:class="block3control"} block inside a `forever`{:class="block3control"} loop. In the `else`{:class="block3control"} part, add blocks to move the wave up and down, the opposite way to the duck.
 >
 > ```blocks3
 > when green flag clicked
@@ -57,7 +57,7 @@ To make the movement look like it's really in water, you can add a wave that cha
 > end
 > ```
 
-**Test:** The wave bobs the opposite way to your duck, so it looks like it's floating.
+**Test:** The wave moves the opposite way to your duck, so it looks like the duck is floating.
 
 Now make an animated version for when the duck moves.
 
@@ -69,7 +69,7 @@ Now make an animated version for when the duck moves.
 
 > [!TASK]
 >
-> **Duplicate** the circle and make the new one a bit bigger, then duplicate again and make it bigger still — three costumes in total.
+> **Duplicate** the circle and make the new one a bit bigger, then duplicate again and make it bigger still. You should have three costumes in total.
 >
 > ![Demo of making the wave costumes.](images/animate-waves.gif){:width="450"}
 
@@ -116,7 +116,7 @@ Now make an animated version for when the duck moves.
 
 > [!TASK]
 >
-> Finally, add a `switch costume to costume1`{:class="block3looks"} at the top of the `else`{:class="block3control"}, so the idle wave always starts from the smallest circle.
+> Finally, add a `switch costume to costume1`{:class="block3looks"} at the top of the `else`{:class="block3control"}, so the wave always starts from the smallest circle.
 >
 > ```blocks3
 > when green flag clicked
@@ -136,4 +136,5 @@ Now make an animated version for when the duck moves.
 > end
 > ```
 
-**Test:** Make sure the wave bobs gently when the duck is still, and animates when it swims.
+
+**Test:** The wave moves slowly when no keys are pressed, and changes when you press an arrow key.

@@ -12,7 +12,7 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 
 > [!TASK]
 >
-> Give it a duck costume — copy one over from your duck sprite, or make a different one of your own.
+> Give it a duck costume. Copy one over from your duck sprite, or make a different one of your own.
 > 
 > ![Copying costume.](images/copy-costume.gif){:width="450"}
 
