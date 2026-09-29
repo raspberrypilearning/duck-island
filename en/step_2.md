@@ -1,12 +1,18 @@
 ## Move the duck
 
-In this step, you will make the duck look like it is moving with the arrow keys.
+In this step, you will use the arrow keys to turn the duck.
 
 > [!TASK]
 >
-> Open the [starter project](https://scratch.mit.edu/projects/1366224959/editor){:target="_blank"} and select **remix**. Your duck is already on the stage — its sprite is called **player**.
+> Open the [starter project](https://scratch.mit.edu/projects/1366224959/editor){:target="_blank"}. Sign in to your Scratch account, then select **remix**.
 >
-> ![The Costumes tab.](images/remix.png){:width="450"}
+> ![The remix button.](images/remix.png){:width="200"}
+
+> [!TIP]
+>
+> The **remix** button only appears when you are signed in.
+
+Your duck is already on the stage. It's sprite is called **player**.
 
 > [!TASK]
 >
@@ -31,7 +37,7 @@ In this step, you will make the duck look like it is moving with the arrow keys.
 > go to x: (0) y: (0)
 > ```
 
-Make the duck look like it's moving by turning it to face the way it swims. 
+Use the arrow keys to turn the duck.
 
 > [!TASK]
 >
@@ -86,4 +92,4 @@ Make the duck look like it's moving by turning it to face the way it swims.
 >
 > ![Duplicating the blocks.](images/duplicate-rightarrow.gif){:width="450"}
 
-**Test:** Press the arrow keys. Your duck turns to face the way it's swimming.
+**Test:** Press the arrow keys and check that your duck turns.

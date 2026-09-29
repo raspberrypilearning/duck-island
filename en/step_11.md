@@ -30,7 +30,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> Click **Choose a Sound** and pick one from the library — the hook uses a "Rip" noise.
+> Click **Choose a Sound** and pick one from the library. The hook uses a "Rip" noise.
 >
 > ![Choosing a sound.](images/sounds-choose.png){:width="250"}
 
@@ -89,7 +89,7 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 
 > [!TASK]
 >
-> `point in direction`{:class="block3motion"} only turns the hazard — to make it drift that way, add a `move`{:class="block3motion"} block set to `3` steps in the clone loop.
+> `point in direction`{:class="block3motion"} only turns the hazard. To make it drift that way, add a `move`{:class="block3motion"} block set to `3` steps in the clone loop.
 >
 > ```blocks3
 > when I start as a clone

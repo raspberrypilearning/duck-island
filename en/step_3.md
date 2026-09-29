@@ -51,14 +51,14 @@ Start by making the duck go up and down when a key is pressed.
 
 > [!TASK]
 >
-> The idle bob uses the same blocks, just smaller and slower. Right-click the blocks you just made to duplicate them, and drop the copy into the `else`{:class="block3control"} part.
+> To make the duck bob slowly when no keys are pressed, use the same blocks, just smaller and slower. Right-click the blocks you just made to duplicate them, and drop the copy into the `else`{:class="block3control"} part.
 >
 > ![Duplicating the blocks.](images/duplicate-idle.gif){:width="450"}
 
 
 > [!TASK]
 >
-> Change the values so the idle bob is smaller and slower.
+> Change the values so the duck's movement is smaller and slower.
 >
 > ```blocks3
 > when green flag clicked
@@ -77,4 +77,4 @@ Start by making the duck go up and down when a key is pressed.
 > end
 > ```
 
-**Test:** Click the green flag. Your duck bobs gently on its own, and faster while it swims.
+**Test:** Click the green flag. Your duck bobs gently on its own, and faster when you press an arrow key.

@@ -4,7 +4,7 @@ In this step, you'll add rocks as obstacles that your duck has to swim around. T
 
 > [!TASK]
 >
-> Add a new sprite for your rocks — draw one with the paint tools, or choose one from the library.
+> Add a new sprite for your rocks. Draw one with the paint tools, or choose one from the library.
 >
 > ![The Choose a Sprite menu.](images/choose-sprite.png){:width="250"}
 
@@ -23,7 +23,7 @@ In this step, you'll add rocks as obstacles that your duck has to swim around. T
 >
 > ![The rock sprite.](images/obstacle-sprite.png){:width="150"}
 >
-> The rocks are made from **clones** — copies of the sprite. Start the script with a `green flag`{:class="block3events"}, hide the original sprite, and create a clone.
+> The rocks are made from **clones**, which are copies of the sprite. Start the script with a `green flag`{:class="block3events"}, hide the original sprite, and create a clone.
 >
 > ```blocks3
 > when green flag clicked
@@ -77,7 +77,7 @@ In this step, you'll add rocks as obstacles that your duck has to swim around. T
 
 **Test:** Click the green flag a few times. A rock appears at a different size and spot each time.
 
-The rocks need to appear while the duck is swimming using the arrow keys. To do that, trigger the clone with a key press instead of the green flag.
+The rocks need to appear when you press the arrow keys. To do that, trigger the clone with a key press instead of the green flag.
 
 > [!TASK]
 >

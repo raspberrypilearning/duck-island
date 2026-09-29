@@ -1,6 +1,6 @@
 ## Rocks on the edge
 
-In this step, you'll make each rock start at the edge the duck is swimming towards.
+In this step, you'll make each rock start at the edge the duck is facing.
 
 > [!TASK]
 >
@@ -31,7 +31,7 @@ In this step, you'll make each rock start at the edge the duck is swimming towar
 > end
 > ```
 
-**Test:** Swim right. Rocks appear from the right-hand edge, with the 1–3 second delay you set earlier.
+**Test:** Press the right arrow. Check that the rocks appear from the right-hand edge, with the 1–3 second delay you set earlier.
 
 > [!TASK]
 >
@@ -56,4 +56,4 @@ In this step, you'll make each rock start at the edge the duck is swimming towar
 > end
 > ```
 
-**Test:** Swim in different directions. New rocks appear from the edge you're heading towards.
+**Test:** Press different arrow keys. New rocks appear from the edge the duck is facing.
