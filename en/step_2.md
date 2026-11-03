@@ -12,11 +12,7 @@ In this step, you will use the arrow keys to turn the duck.
 >
 > The **remix** button only appears when you are signed in.
 
-Your duck is already on the Stage.
-
-> [!TASK]
->
-> Select the duck sprite, currently named **Matt Hogan**. In the Sprite pane, change its name to `player`. You will use this name later when other sprites check whether they are touching the duck.
+Your duck is already on the Stage. Its sprite is called **player**. Other sprites will use this name later to check whether they are touching the duck.
 
 > [!TASK]
 >
