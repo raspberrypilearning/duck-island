@@ -40,10 +40,10 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 >
 > ```blocks3
 > when I start as a clone
-> appear
+> appear::custom
 > forever
-> move
-> disappear
+> move::custom
+> disappear::custom
 > if <touching (player v)?> then
 > +start sound (Rip v)
 > delete this clone
@@ -57,10 +57,10 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 >
 > ```blocks3
 > when I start as a clone
-> appear
+> appear::custom
 > forever
-> move
-> disappear
+> move::custom
+> disappear::custom
 > if <touching (player v)?> then
 > start sound (Rip v)
 > +wait (0.2) seconds
@@ -93,10 +93,10 @@ In this step, you'll add a hazard your duck has to dodge, or it ends the game. T
 >
 > ```blocks3
 > when I start as a clone
-> appear
+> appear::custom
 > forever
-> move
-> disappear
+> move::custom
+> disappear::custom
 > if <touching (player v)?> then
 > start sound (Rip v)
 > wait (0.2) seconds

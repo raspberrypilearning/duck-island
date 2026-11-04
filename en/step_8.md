@@ -67,10 +67,10 @@ In this step, you'll delete each rock once it drifts off the stage, so your game
 >
 > ```blocks3
 > when I start as a clone
-> appear
+> appear::custom
 > forever
-> move
-> +disappear
+> move::custom
+> +disappear::custom
 > end
 > ```
 

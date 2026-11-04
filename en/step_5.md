@@ -72,7 +72,7 @@ In this step, you'll add rocks as obstacles that your duck has to swim around. T
 >
 > ```blocks3
 > when I start as a clone
-> appear
+> appear::custom
 > ```
 
 **Test:** Click the green flag a few times. A rock appears at a different size and spot each time.
