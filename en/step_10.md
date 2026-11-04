@@ -22,10 +22,10 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > ```blocks3
 > when I start as a clone
-> appear
+> appear::custom
 > forever
-> move
-> disappear
+> move::custom
+> disappear::custom
 > +if <touching (player v)?> then
 > end
 > end
@@ -60,8 +60,8 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > ```blocks3
 > forever
-> move
-> disappear
+> move::custom
+> disappear::custom
 > if <touching (player v)?> then
 > +change [score v] by (1)
 > end
@@ -86,8 +86,8 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > ```blocks3
 > forever
-> move
-> disappear
+> move::custom
+> disappear::custom
 > if <touching (player v)?> then
 > change [score v] by (1)
 > +start sound (Glug v)
@@ -101,8 +101,8 @@ In this step, you'll collect the lost ducks for points. You can duplicate the ro
 >
 > ```blocks3
 > forever
-> move
-> disappear
+> move::custom
+> disappear::custom
 > if <touching (player v)?> then
 > change [score v] by (1)
 > start sound (Glug v)

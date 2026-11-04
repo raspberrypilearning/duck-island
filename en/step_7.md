@@ -63,9 +63,9 @@ The rocks move across the stage, which makes it look like your duck is swimming.
 >
 > ```blocks3
 > when I start as a clone
-> appear
+> appear::custom
 > +forever
-> move
+> move::custom
 > end
 > ```
 
