@@ -1,0 +1,36 @@
+down
+
+destra
+
+sinistra
+
+up
+
+costume 1
+
+appear
+
+rock speed
+
+muovi
+
+disappear
+
+ostacolo
+
+right blocked
+
+sì
+
+no
+
+left blocked
+
+up blocked
+
+down blocked
+
+giocatore
+
+punteggio
+
