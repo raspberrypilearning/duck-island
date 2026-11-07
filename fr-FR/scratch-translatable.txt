@@ -1,0 +1,36 @@
+down
+
+droite
+
+gauche
+
+up
+
+costume1
+
+appear
+
+rock speed
+
+déplacement
+
+disappear
+
+obstacle
+
+right blocked
+
+oui
+
+non
+
+left blocked
+
+up blocked
+
+down blocked
+
+joueur
+
+score
+

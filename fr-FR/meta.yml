@@ -1,0 +1,25 @@
+title: Duck island
+hero_image: images/banner.png
+description: Make a duck-rescue game in this Code Club arcade project.
+listed: true
+pdf: false
+steps:
+  - title: Ce que tu vas faire
+  - title: Move the duck
+    completion:
+      - engaged
+  - title: Bob on the water
+  - title: Make some waves
+  - title: Add rocks
+  - title: Rocks on the edge
+  - title: Move the rocks
+  - title: Clear the rocks
+  - title: Block the duck
+  - title: Collectables
+  - title: Add a hazard
+    completion:
+      - internal
+  - title: 'Challenge: make it your own'
+    challenge: true
+    completion:
+      - external
