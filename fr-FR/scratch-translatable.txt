@@ -1,0 +1,36 @@
+bas
+
+droite
+
+gauche
+
+haut
+
+costume1
+
+apparaitre
+
+vitesse rocher
+
+mouvement
+
+disparaitre
+
+obstacle
+
+bloque droite
+
+oui
+
+non
+
+bloque gauche
+
+bloque haut
+
+bloque bas
+
+joueur
+
+score
+
