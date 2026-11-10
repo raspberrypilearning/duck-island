@@ -1,0 +1,36 @@
+omlaag
+
+rechts
+
+links
+
+omhoog
+
+uiterlijk1
+
+appear
+
+rock speed
+
+beweging
+
+disappear
+
+obstakel
+
+right blocked
+
+ja
+
+nee
+
+left blocked
+
+up blocked
+
+down blocked
+
+speler
+
+score
+

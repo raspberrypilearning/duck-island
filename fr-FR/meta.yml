@@ -1,0 +1,25 @@
+title: L'île aux canards
+hero_image: images/banner.png
+description: Crée un jeu de sauvetage de canards dans ce projet d'arcade Code Club.
+listed: true
+pdf: false
+steps:
+  - title: Ce que tu vas faire
+  - title: Déplacer le canard
+    completion:
+      - engaged
+  - title: Bob sur l'eau
+  - title: Créer des vagues
+  - title: Ajouter des rochers
+  - title: Rochers au bord
+  - title: Déplacer les rochers
+  - title: Retirer les rochers
+  - title: Bloquer le canard
+  - title: Collectables
+  - title: Ajouter un danger
+    completion:
+      - internal
+  - title: 'Défi : personnaliser'
+    challenge: true
+    completion:
+      - external
