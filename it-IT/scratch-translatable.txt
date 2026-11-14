@@ -1,0 +1,36 @@
+giù
+
+destra
+
+sinistra
+
+su
+
+costume 1
+
+apparire
+
+velocità della roccia
+
+muovi
+
+scomparire
+
+ostacolo
+
+bloccato a destra
+
+sì
+
+no
+
+bloccato a sinistra
+
+bloccato in alto
+
+bloccato sotto
+
+giocatore
+
+punteggio
+

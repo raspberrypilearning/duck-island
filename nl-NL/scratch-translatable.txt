@@ -1,0 +1,36 @@
+omlaag
+
+rechts
+
+links
+
+omhoog
+
+uiterlijk1
+
+verschijn
+
+snelheid van de steen
+
+beweging
+
+verdwijn
+
+obstakel
+
+rechts geblokkeerd
+
+ja
+
+nee
+
+links geblokkeerd
+
+omhoog geblokkeerd
+
+omlaag geblokkeerd
+
+speler
+
+score
+
