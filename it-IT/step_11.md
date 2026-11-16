@@ -73,7 +73,7 @@ In questa fase, aggiungerai un ostacolo che la tua anatra dovrà schivare, altri
 
 > [!TASK]
 >
-> Per rendere il gioco più difficile, invia ogni pericolo in una direzione casuale. Nel tuo blocco `apparire`{:class="block3myblocks"} aggiungi un `punta in direzione{:class="block3motion"} con angoli `casuali\`{:class="block3operators"}.
+> Per rendere il gioco più difficile, invia ogni pericolo in una direzione casuale. Nel tuo blocco `apparire`{:class="block3myblocks"} aggiungi un `punta in direzione{:class="block3motion"} con angoli`casuali\`{:class="block3operators"}.
 >
 > ```blocks3
 > define appear

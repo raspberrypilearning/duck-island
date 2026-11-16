@@ -73,7 +73,7 @@ Le rocce si muovono sul palco, dando l'impressione che la tua anatra stia nuotan
 
 > [!TASK]
 >
-> La **freccia a destra** deve spostare la roccia nella direzione opposta. Aggiungi un `se allora`{:class="block3control"} per la roccia, e un `cambia x di `{:class="block3motion"}, ma questa volta usa un operatore `() - ()`{:class="block3operators"} per prendere `velocità roccia`{:class="block3variables"} lontano da `0`.
+> La **freccia a destra** deve spostare la roccia nella direzione opposta. Aggiungi un `se allora`{:class="block3control"} per la roccia, e un `cambia x di`{:class="block3motion"}, ma questa volta usa un operatore `() - ()`{:class="block3operators"} per prendere `velocità roccia`{:class="block3variables"} lontano da `0`.
 >
 > ```blocks3
 > define move
