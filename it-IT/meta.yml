@@ -1,0 +1,25 @@
+title: Isola delle anatre
+hero_image: images/banner.png
+description: In questo progetto arcade del Code Club, crea un gioco di salvataggio di anatre.
+listed: true
+pdf: false
+steps:
+  - title: Cosa creerai
+  - title: Sposta l'anatra
+    completion:
+      - engaged
+  - title: Bob sull'acqua
+  - title: Crea alcune onde
+  - title: Aggiungi rocce
+  - title: Rocce sul bordo
+  - title: Sposta le rocce
+  - title: Rimuovere le rocce
+  - title: Blocca l'anatra
+  - title: Raccolta di oggetti
+  - title: Aggiungi un pericolo
+    completion:
+      - internal
+  - title: 'Sfida: crea la tua'
+    challenge: true
+    completion:
+      - external
