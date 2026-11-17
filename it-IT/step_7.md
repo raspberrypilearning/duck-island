@@ -16,13 +16,13 @@ Le rocce si muovono sul palco, dando l'impressione che la tua anatra stia nuotan
 >
 > ```blocks3
 > when green flag clicked
-> +set [rock speed v] to (3)
+> +set [velocità roccia v] to (3)
 > hide
 > forever
-> if <key (any v) pressed?> then
-> create clone of (myself v)
+> if <key (qualunque v) pressed?> then
+> create clone of (me stesso v)
 > end
-> wait (pick random (1) to (3)) seconds
+> wait (numero a caso tra (1) to (3)) seconds
 > end
 > ```
 
@@ -37,23 +37,23 @@ Le rocce si muovono sul palco, dando l'impressione che la tua anatra stia nuotan
 > Sotto `definisci muovere`{:class="block3myblocks"}, aggiungi un `se allora`{:class="block3control"} per la **freccia sinistra** e un `cambia x di`{:class="block3motion"} con `velocità roccia`{:class="block3variables"} al suo interno.
 >
 > ```blocks3
-> define move
-> if <key (left arrow v) pressed?> then
-> change x by (rock speed)
+> define muovere
+> if <key (freccia sinistra v) pressed?> then
+> change x by (velocità roccia)
 > end
 > ```
 
 > [!TASK]
 >
-> Aggiungi un altro `se allora`{:class="block3control"} per la **freccia in basso**, con un `cambia y di`{:class="block3motion"} e `velocità roccia`{:class="block3variables"}.
+> Aggiungi un altro `se allora`{:class="block3control"} per la **freccia giù**, con un `cambia y di`{:class="block3motion"} e `velocità roccia`{:class="block3variables"}.
 >
 > ```blocks3
-> define move
-> if <key (left arrow v) pressed?> then
-> change x by (rock speed)
+> define muovere
+> if <key (freccia sinistra v) pressed?> then
+> change x by (velocità roccia)
 > end
-> +if <key (down arrow v) pressed?> then
-> change y by (rock speed)
+> +if <key (freccia giù v) pressed?> then
+> change y by (velocità roccia)
 > end
 > ```
 
@@ -76,35 +76,35 @@ Le rocce si muovono sul palco, dando l'impressione che la tua anatra stia nuotan
 > La **freccia a destra** deve spostare la roccia nella direzione opposta. Aggiungi un `se allora`{:class="block3control"} per la roccia, e un `cambia x di`{:class="block3motion"}, ma questa volta usa un operatore `() - ()`{:class="block3operators"} per prendere `velocità roccia`{:class="block3variables"} lontano da `0`.
 >
 > ```blocks3
-> define move
-> if <key (left arrow v) pressed?> then
-> change x by (rock speed)
+> define muovere
+> if <key (freccia sinistra v) pressed?> then
+> change x by (velocità roccia)
 > end
-> if <key (down arrow v) pressed?> then
-> change y by (rock speed)
+> if <key (freccia giù v) pressed?> then
+> change y by (velocità roccia)
 > end
-> +if <key (right arrow v) pressed?> then
-> change x by ((0) - (rock speed))
+> +if <key (freccia destra v) pressed?> then
+> change x by ((0) - (velocità roccia))
 > end
 > ```
 
 > [!TASK]
 >
-> Fai lo stesso per la **freccia verso l'alto**: un `cambia y di`{:class="block3motion"} che allontana `velocità roccia`{:class="block3variables"} da `0`.
+> Fai lo stesso per la **freccia verso su**: un `cambia y di`{:class="block3motion"} che allontana `velocità roccia`{:class="block3variables"} da `0`.
 >
 > ```blocks3
-> define move
-> if <key (left arrow v) pressed?> then
-> change x by (rock speed)
+> define muovere
+> if <key (freccia sinistra v) pressed?> then
+> change x by (velocità roccia)
 > end
-> if <key (down arrow v) pressed?> then
-> change y by (rock speed)
+> if <key (freccia giù v) pressed?> then
+> change y by (velocità roccia)
 > end
-> if <key (right arrow v) pressed?> then
-> change x by ((0) - (rock speed))
+> if <key (freccia destra v) pressed?> then
+> change x by ((0) - (velocità roccia))
 > end
-> +if <key (up arrow v) pressed?> then
-> change y by ((0) - (rock speed))
+> +if <key (freccia su v) pressed?> then
+> change y by ((0) - (velocità roccia))
 > end
 > ```
 

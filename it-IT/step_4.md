@@ -73,14 +73,14 @@ Ora crea una versione animata per quando l'anatra si muove.
 
 > [!TASK]
 >
-> Trascina un `tasto premuto`{:class="block3sensing"} nel blocco `se`{:class="block3control"} e scegli **qualsiasi**.
+> Trascina un `tasto premuto`{:class="block3sensing"} nel blocco `se`{:class="block3control"} e scegli **qualunque**.
 >
 > ```blocks3
 > when green flag clicked
 > go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (any v) pressed?> then
+> if <key (qualunque v) pressed?> then
 > else
 > change y by (-1)
 > wait (0.3) seconds
@@ -99,7 +99,7 @@ Ora crea una versione animata per quando l'anatra si muove.
 > go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (any v) pressed?> then
+> if <key (qualunque v) pressed?> then
 > +next costume
 > +wait (0.1) seconds
 > else
@@ -120,7 +120,7 @@ Ora crea una versione animata per quando l'anatra si muove.
 > go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (any v) pressed?> then
+> if <key (qualunque v) pressed?> then
 > next costume
 > wait (0.1) seconds
 > else

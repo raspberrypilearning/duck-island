@@ -4,7 +4,7 @@ In questo passaggio, si utilizzano i tasti freccia per girare l'anatra.
 
 > [!TASK]
 >
-> Apri un [nuovo progetto Scratch](https://scratch.mit.edu/projects/1366224959/editor){:target="_blank"}. Accedi al tuo account Scratch, quindi seleziona **remix**.
+> Apri un [nuovo progetto Scratch](https://scratch.mit.edu/projects/1441171571/editor){:target="_blank"}. Accedi al tuo account Scratch, quindi seleziona **remix**.
 >
 > ![Il pulsante remix.](images/remix.png){:width="200"}
 
@@ -33,7 +33,7 @@ La tua anatra è già sullo stage. Il suo sprite si chiama **player**. Altri spr
 > ```blocks3
 > when green flag clicked
 > go to [front v] layer
-> switch costume to (down v)
+> switch costume to (giù v)
 > go to x: (0) y: (0)
 > ```
 
@@ -46,10 +46,10 @@ Usa i tasti freccia per girare l'anatra.
 > ```blocks3
 > when green flag clicked
 > go to [front v] layer
-> switch costume to (down v)
+> switch costume to (giù v)
 > go to x: (0) y: (0)
 > +forever
-> if <key (right arrow v) pressed?> then
+> if <key (freccia destra v) pressed?> then
 > end
 > end
 > ```
@@ -60,8 +60,8 @@ Usa i tasti freccia per girare l'anatra.
 >
 > ```blocks3
 > forever
-> if <key (right arrow v) pressed?> then
-> +switch costume to (right v)
+> if <key (freccia destra v) pressed?> then
+> +switch costume to (destra v)
 > end
 > end
 > ```
@@ -72,17 +72,17 @@ Usa i tasti freccia per girare l'anatra.
 >
 > ```blocks3
 > forever
-> if <key (right arrow v) pressed?> then
-> switch costume to (right v)
+> if <key (freccia destra v) pressed?> then
+> switch costume to (destra v)
 > end
-> +if <key (left arrow v) pressed?> then
-> switch costume to (left v)
+> +if <key (freccia sinistra v) pressed?> then
+> switch costume to (sinistra v)
 > end
-> +if <key (down arrow v) pressed?> then
-> switch costume to (down v)
+> +if <key (freccia giù v) pressed?> then
+> switch costume to (giù v)
 > end
-> +if <key (up arrow v) pressed?> then
-> switch costume to (up v)
+> +if <key (freccia su v) pressed?> then
+> switch costume to (su v)
 > end
 > end
 > ```

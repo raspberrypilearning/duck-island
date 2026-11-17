@@ -10,10 +10,10 @@ In questo passaggio, farai in modo che ogni pietra inizi dal bordo rivolto verso
 >
 > ```blocks3
 > define appear
-> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-> set size to (pick random (20) to (100)) %
+> go to x: (numero a caso tra (-240) to (240)) y: (numero a caso tra (-180) to (180))
+> set size to (numero a caso tra (20) to (100)) %
 > show
-> +if <key (right arrow v) pressed?> then
+> +if <key (freccia destra v) pressed?> then
 > end
 > ```
 
@@ -23,10 +23,10 @@ In questo passaggio, farai in modo che ogni pietra inizi dal bordo rivolto verso
 >
 > ```blocks3
 > define appear
-> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-> set size to (pick random (20) to (100)) %
+> go to x: (numero a caso tra (-240) to (240)) y: (numero a caso tra (-180) to (180))
+> set size to (numero a caso tra (20) to (100)) %
 > show
-> if <key (right arrow v) pressed?> then
+> if <key (freccia destra v) pressed?> then
 > +set x to (240)
 > end
 > ```
@@ -39,19 +39,19 @@ In questo passaggio, farai in modo che ogni pietra inizi dal bordo rivolto verso
 >
 > ```blocks3
 > define appear
-> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-> set size to (pick random (20) to (100)) %
+> go to x: (numero a caso tra (-240) to (240)) y: (numero a caso tra (-180) to (180))
+> set size to (numero a caso tra (20) to (100)) %
 > show
-> if <key (right arrow v) pressed?> then
+> if <key (freccia destra v) pressed?> then
 > set x to (240)
 > end
-> +if <key (left arrow v) pressed?> then
+> +if <key (freccia sinestra v) pressed?> then
 > set x to (-240)
 > end
-> +if <key (down arrow v) pressed?> then
+> +if <key (freccia giù v) pressed?> then
 > set y to (-180)
 > end
-> +if <key (up arrow v) pressed?> then
+> +if <key (freccia su v) pressed?> then
 > set y to (180)
 > end
 > ```

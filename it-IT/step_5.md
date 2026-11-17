@@ -27,7 +27,7 @@ In questa fase, aggiungerai delle rocce come ostacoli che la tua anatra dovrà a
 > ```blocks3
 > when green flag clicked
 > hide
-> create clone of (myself v)
+> create clone of (me stesso v)
 > ```
 
 > [!TASK]
@@ -50,7 +50,7 @@ In questa fase, aggiungerai delle rocce come ostacoli che la tua anatra dovrà a
 >
 > ```blocks3
 > define appear
-> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
+> go to x: (numero a caso tra (-240) to (240)) y: (numero a caso tra (-180) to (180))
 > show
 > ```
 
@@ -60,8 +60,8 @@ In questa fase, aggiungerai delle rocce come ostacoli che la tua anatra dovrà a
 >
 > ```blocks3
 > define appear
-> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-> +set size to (pick random (20) to (100)) %
+> go to x: (numero a caso tra (-240) to (240)) y: (numero a caso tra (-180) to (180))
+> +set size to (numero a caso tra (20) to (100)) %
 > show
 > ```
 
@@ -85,8 +85,8 @@ Le rocce devono apparire quando si premono i tasti freccia. Per farlo, attiva il
 > ```blocks3
 > when green flag clicked
 > hide
-> +if <key (any v) pressed?> then
-> create clone of (myself v)
+> +if <key (qualunque v) pressed?> then
+> create clone of (me stesso v)
 > end
 > ```
 
@@ -98,8 +98,8 @@ Le rocce devono apparire quando si premono i tasti freccia. Per farlo, attiva il
 > when green flag clicked
 > hide
 > +forever
-> if <key (any v) pressed?> then
-> create clone of (myself v)
+> if <key (qualunque v) pressed?> then
+> create clone of (me stesso v)
 > end
 > end
 > ```
@@ -116,10 +116,10 @@ Per limitare il numero di rocce clonate, aggiungi un piccolo ritardo alla fine. 
 > when green flag clicked
 > hide
 > forever
-> if <key (any v) pressed?> then
-> create clone of (myself v)
+> if <key (qualunque v) pressed?> then
+> create clone of (me stesso v)
 > end
-> +wait (pick random (1) to (3)) seconds
+> +wait (numero a caso tra (1) to (3)) seconds
 > end
 > ```
 

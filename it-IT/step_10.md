@@ -26,7 +26,7 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> +if <touching (player v)?> then
+> +if <sta toccando (giocatore v)?> then
 > end
 > end
 > ```
@@ -43,14 +43,14 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 >
 > ```blocks3
 > when green flag clicked
-> set [rock speed v] to (3)
-> +set [score v] to (0)
+> set [velocità roccia v] to (3)
+> +set [punteggio v] to (0)
 > hide
 > forever
-> if <key (any v) pressed?> then
-> create clone of (myself v)
+> if <key (qualqunque v) pressed?> then
+> create clone of (me stesso v)
 > end
-> wait (pick random (1) to (3)) seconds
+> wait (numero a caso tra (1) to (3)) seconds
 > end
 > ```
 
@@ -62,8 +62,8 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> if <touching (player v)?> then
-> +change [score v] by (1)
+> if <sta toccando (giocatore v)?> then
+> +change [punteggio v] by (1)
 > end
 > end
 > ```
@@ -88,8 +88,8 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> if <touching (player v)?> then
-> change [score v] by (1)
+> if <sta toccando (giocatore v)?> then
+> change [punteggio v] by (1)
 > +start sound (Glug v)
 > end
 > end
@@ -103,8 +103,8 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> if <touching (player v)?> then
-> change [score v] by (1)
+> if <sta toccando (giocatore v)?> then
+> change [punteggio v] by (1)
 > start sound (Glug v)
 > +delete this clone
 > end
