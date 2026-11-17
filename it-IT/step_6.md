@@ -10,7 +10,7 @@ In questo passaggio, farai in modo che ogni pietra inizi dal bordo rivolto verso
 >
 > ```blocks3
 > define appear
-> go to x: (pick random (-240) to (240)) y: (npick random (-180) to (180))
+> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > set size to (pick random (20) to (100)) %
 > show
 > +if <key (freccia destra v) pressed?> then

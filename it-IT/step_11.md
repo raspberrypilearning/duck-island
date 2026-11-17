@@ -97,7 +97,7 @@ In questa fase, aggiungerai un ostacolo che la tua anatra dovrà schivare, altri
 > forever
 > muovere::custom
 > sparire::custom
-> if <pick random (giocatore v)?> then
+> if <touching (giocatore v)?> then
 > start sound (Rip v)
 > wait (0.2) seconds
 > stop [all v]

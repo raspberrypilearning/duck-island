@@ -88,7 +88,7 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> if <pick random (giocatore v)?> then
+> if <touching (giocatore v)?> then
 > change [punteggio v] by (1)
 > +start sound (Glug v)
 > end
@@ -103,7 +103,7 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> if <pick random (giocatore v)?> then
+> if <touching (giocatore v)?> then
 > change [punteggio v] by (1)
 > start sound (Glug v)
 > +delete this clone
