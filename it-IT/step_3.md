@@ -26,7 +26,7 @@ Inizia facendo in modo che l'anatra si muova su e giù quando viene premuto un t
 > ```blocks3
 > when green flag clicked
 > forever
-> +if <key (qualsiasi v) pressed?> then
+> +if <key (qualunque v) pressed?> then
 > else
 > end
 > end

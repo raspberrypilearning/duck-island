@@ -32,7 +32,7 @@ La tua anatra è già sullo stage. Il suo sprite si chiama **player**. Altri spr
 >
 > ```blocks3
 > when green flag clicked
-> go to [front v] layer
+> go to [primo v] layer
 > switch costume to (giù v)
 > go to x: (0) y: (0)
 > ```
@@ -45,7 +45,7 @@ Usa i tasti freccia per girare l'anatra.
 >
 > ```blocks3
 > when green flag clicked
-> go to [front v] layer
+> go to [primo v] layer
 > switch costume to (giù v)
 > go to x: (0) y: (0)
 > +forever

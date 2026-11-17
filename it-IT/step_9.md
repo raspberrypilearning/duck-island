@@ -25,7 +25,7 @@ end
 > ```blocks3
 > if <key (freccia destra v) pressed?> then
 > switch costume to (right v)
-> +if <sta toccando (ostacolo v)?> then
+> +if <touching (ostacolo v)?> then
 > else
 > end
 > end
@@ -38,7 +38,7 @@ end
 > ```blocks3
 > if <key (freccia destra v) pressed?> then
 > switch costume to (right v)
-> if <sta toccando (ostacolo v)?> then
+> if <touching (ostacolo v)?> then
 > +set [bloccato a destra v] to [sì]
 > else
 > end
@@ -52,7 +52,7 @@ end
 > ```blocks3
 > if <key (right arrow v) pressed?> then
 > switch costume to (right v)
-> if <sta toccando (ostacolo v)?> then
+> if <touching (ostacolo v)?> then
 > set [bloccato a destra v] to [sì]
 > +wait (0.5) seconds
 > else
@@ -67,7 +67,7 @@ end
 > ```blocks3
 > if <key (freccia destra v) pressed?> then
 > switch costume to (right v)
-> if <sta toccando (ostacolo v)?> then
+> if <touching (ostacolo v)?> then
 > set [destra bloccata v] to [sì]
 > wait (0.5) seconds
 > else
@@ -115,7 +115,7 @@ Ora aggiungi le variabili di blocco alla roccia, in modo che smetta di muoversi 
 > Metti `destra bloccata`{:class="block3variables"} a sinistra e `no` a destra, così la roccia si muove solo quando si preme la freccia destra e la destra non è bloccata.
 >
 > ```blocks3
-> define move
+> define muovere
 > if <<key (freccia destra v) pressed?> and <(destra bloccata) = [no]>> then
 > change x by ((0) - (velocità roccia))
 > end
@@ -126,7 +126,7 @@ Ora aggiungi le variabili di blocco alla roccia, in modo che smetta di muoversi 
 > Duplica l'operazione e ripeti la stessa procedura per ciascuno dei tasti freccia.
 >
 > ```blocks3
-> define move
+> define muovere
 > if <<key (freccia destra v) pressed?> and <(destra bloccata) = [no]>> then
 > change x by ((0) - (velocità roccia))
 > end

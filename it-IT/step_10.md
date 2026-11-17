@@ -26,7 +26,7 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> +if <sta toccando (giocatore v)?> then
+> +if <touching (giocatore v)?> then
 > end
 > end
 > ```
@@ -50,7 +50,7 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > if <key (qualqunque v) pressed?> then
 > create clone of (me stesso v)
 > end
-> wait (numero a caso tra (1) to (3)) seconds
+> wait (pick random (1) to (3)) seconds
 > end
 > ```
 
@@ -62,7 +62,7 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> if <sta toccando (giocatore v)?> then
+> if <pick random (giocatore v)?> then
 > +change [punteggio v] by (1)
 > end
 > end
@@ -88,7 +88,7 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> if <sta toccando (giocatore v)?> then
+> if <pick random (giocatore v)?> then
 > change [punteggio v] by (1)
 > +start sound (Glug v)
 > end
@@ -103,7 +103,7 @@ In questa fase, raccoglierai le anatre perse per ottenere punti. È possibile du
 > forever
 > muovere::custom
 > sparire::custom
-> if <sta toccando (giocatore v)?> then
+> if <pick random (giocatore v)?> then
 > change [punteggio v] by (1)
 > start sound (Glug v)
 > +delete this clone

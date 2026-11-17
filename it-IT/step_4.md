@@ -30,7 +30,7 @@ Per far sì che il movimento sembri davvero in acqua, puoi aggiungere un'onda ch
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [secondo v] layer
 > go to x: (0) y: (-20)
 > ```
 
@@ -42,7 +42,7 @@ Per far sì che il movimento sembri davvero in acqua, puoi aggiungere un'onda ch
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [secondo v] layer
 > go to x: (0) y: (-20)
 > forever
 > +if <> then
@@ -77,7 +77,7 @@ Ora crea una versione animata per quando l'anatra si muove.
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [secondo v] layer
 > go to x: (0) y: (-20)
 > forever
 > if <key (qualunque v) pressed?> then
@@ -96,7 +96,7 @@ Ora crea una versione animata per quando l'anatra si muove.
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [secondo v] layer
 > go to x: (0) y: (-20)
 > forever
 > if <key (qualunque v) pressed?> then
@@ -117,7 +117,7 @@ Ora crea una versione animata per quando l'anatra si muove.
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [secondo v] layer
 > go to x: (0) y: (-20)
 > forever
 > if <key (qualunque v) pressed?> then

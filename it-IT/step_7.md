@@ -22,7 +22,7 @@ Le rocce si muovono sul palco, dando l'impressione che la tua anatra stia nuotan
 > if <key (qualunque v) pressed?> then
 > create clone of (me stesso v)
 > end
-> wait (numero a caso tra (1) to (3)) seconds
+> wait (pick random (1) to (3)) seconds
 > end
 > ```
 

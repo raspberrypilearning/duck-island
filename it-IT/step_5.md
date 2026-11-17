@@ -50,7 +50,7 @@ In questa fase, aggiungerai delle rocce come ostacoli che la tua anatra dovrà a
 >
 > ```blocks3
 > define appear
-> go to x: (numero a caso tra (-240) to (240)) y: (numero a caso tra (-180) to (180))
+> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > show
 > ```
 
@@ -59,9 +59,9 @@ In questa fase, aggiungerai delle rocce come ostacoli che la tua anatra dovrà a
 > È anche possibile assegnare a ciascuna roccia una dimensione casuale.
 >
 > ```blocks3
-> define appear
-> go to x: (numero a caso tra (-240) to (240)) y: (numero a caso tra (-180) to (180))
-> +set size to (numero a caso tra (20) to (100)) %
+> define apparire
+> go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
+> +set size to (pick random (20) to (100)) %
 > show
 > ```
 
@@ -71,7 +71,7 @@ In questa fase, aggiungerai delle rocce come ostacoli che la tua anatra dovrà a
 >
 > ```blocks3
 > when I start as a clone
-> appear::custom
+> apparire::custom
 > ```
 
 **Test:** Clicca più volte sulla bandierina verde. Ogni volta che compare una roccia, la sua dimensione e posizione cambiano.
@@ -119,7 +119,7 @@ Per limitare il numero di rocce clonate, aggiungi un piccolo ritardo alla fine. 
 > if <key (qualunque v) pressed?> then
 > create clone of (me stesso v)
 > end
-> +wait (numero a caso tra (1) to (3)) seconds
+> +wait (pick random (1) to (3)) seconds
 > end
 > ```
 
