@@ -30,7 +30,7 @@ Per far sì che il movimento sembri davvero in acqua, puoi aggiungere un'onda ch
 >
 > ```blocks3
 > when green flag clicked
-> go to [secondo v] layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > ```
 
@@ -42,7 +42,7 @@ Per far sì che il movimento sembri davvero in acqua, puoi aggiungere un'onda ch
 >
 > ```blocks3
 > when green flag clicked
-> go to [secondo v] layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
 > +if <> then
@@ -73,14 +73,14 @@ Ora crea una versione animata per quando l'anatra si muove.
 
 > [!TASK]
 >
-> Trascina un `tasto premuto`{:class="block3sensing"} nel blocco `se`{:class="block3control"} e scegli **qualunque**.
+> Trascina un `tasto premuto`{:class="block3sensing"} nel blocco `se`{:class="block3control"} e scegli **qualsiasi**.
 >
 > ```blocks3
 > when green flag clicked
-> go to [secondo v] layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (qualunque v) pressed?> then
+> if <key (any v) pressed?> then
 > else
 > change y by (-1)
 > wait (0.3) seconds
@@ -96,10 +96,10 @@ Ora crea una versione animata per quando l'anatra si muove.
 >
 > ```blocks3
 > when green flag clicked
-> go to [secondo v] layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (qualunque v) pressed?> then
+> if <key (any v) pressed?> then
 > +next costume
 > +wait (0.1) seconds
 > else
@@ -117,10 +117,10 @@ Ora crea una versione animata per quando l'anatra si muove.
 >
 > ```blocks3
 > when green flag clicked
-> go to [secondo v] layer
+> go to [back v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (qualunque v) pressed?> then
+> if <key (any v) pressed?> then
 > next costume
 > wait (0.1) seconds
 > else

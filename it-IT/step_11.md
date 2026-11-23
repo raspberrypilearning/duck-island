@@ -44,7 +44,7 @@ In questa fase, aggiungerai un ostacolo che la tua anatra dovrà schivare, altri
 > forever
 > muovere::custom
 > sparire::custom
-> if <touching (giocatore v)?> then
+> if <touching (player v)?> then
 > +start sound (Rip v)
 > delete this clone
 > end
@@ -61,7 +61,7 @@ In questa fase, aggiungerai un ostacolo che la tua anatra dovrà schivare, altri
 > forever
 > muovere::custom
 > sparire::custom
-> if <touching (giocatore v)?> then
+> if <touching (player v)?> then
 > start sound (Rip v)
 > +wait (0.2) seconds
 > +stop [all v]
@@ -73,10 +73,10 @@ In questa fase, aggiungerai un ostacolo che la tua anatra dovrà schivare, altri
 
 > [!TASK]
 >
-> Per rendere il gioco più difficile, invia ogni pericolo in una direzione casuale. Nel tuo blocco `apparire`{:class="block3myblocks"} aggiungi un `punta in direzione{:class="block3motion"} con angoli`casuali\`{:class="block3operators"}.
+> Per rendere il gioco più difficile, invia ogni pericolo in una direzione casuale. Nel tuo blocco `apparire`{:class="block3myblocks"} aggiungi un `punta in direzione{:class="block3motion"} con angoli `casuali\`{:class="block3operators"}.
 >
 > ```blocks3
-> define apparire
+> define appear
 > +point in direction (pick random (-180) to (180))
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > set size to (pick random (20) to (100)) %
@@ -97,7 +97,7 @@ In questa fase, aggiungerai un ostacolo che la tua anatra dovrà schivare, altri
 > forever
 > muovere::custom
 > sparire::custom
-> if <touching (giocatore v)?> then
+> if <touching (player v)?> then
 > start sound (Rip v)
 > wait (0.2) seconds
 > stop [all v]
