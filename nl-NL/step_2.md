@@ -68,7 +68,7 @@ Gebruik de pijltjestoetsen om de eend te draaien.
 
 > [!TASK]
 >
-> Doe hetzelfde voor de andere drie toetsen: `pijltje links `{:class="block3sensing"} → links, `pijltje omlaag`{:class="block3sensing"} → omlaag, en `pijltje omhoog`{:class="block3sensing"} → omhoog.
+> Doe hetzelfde voor de andere drie toetsen: `pijltje links`{:class="block3sensing"} → links, `pijltje omlaag`{:class="block3sensing"} → omlaag, en `pijltje omhoog`{:class="block3sensing"} → omhoog.
 >
 > ```blocks3
 > forever

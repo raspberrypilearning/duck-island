@@ -33,7 +33,7 @@ end
 
 > [!TASK]
 >
-> Als het een rots raakt, voeg dan een `maak rechts geblokkeerd `{:class="block3variables"} blok toe en stel dit in op `ja`.
+> Als het een rots raakt, voeg dan een `maak rechts geblokkeerd`{:class="block3variables"} blok toe en stel dit in op `ja`.
 >
 > ```blocks3
 > if <key (right arrow v) pressed?> then

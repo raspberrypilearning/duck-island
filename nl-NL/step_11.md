@@ -73,7 +73,7 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 
 > [!TASK]
 >
-> Om het moeilijker te maken, stuur je elk obstakel vanuit een willekeurige richting. Voeg in je `verschijn`{:class="block3myblocks"} blok een `richt naar () graden `{:class="block3motion"} toe en zet in het vakje een `willekeurig getal tussen () en ()`{:class="block3operators"} blok.
+> Om het moeilijker te maken, stuur je elk obstakel vanuit een willekeurige richting. Voeg in je `verschijn`{:class="block3myblocks"} blok een `richt naar () graden`{:class="block3motion"} toe en zet in het vakje een `willekeurig getal tussen () en ()`{:class="block3operators"} blok.
 >
 > ```blocks3
 > define appear

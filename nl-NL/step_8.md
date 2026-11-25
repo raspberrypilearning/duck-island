@@ -32,7 +32,7 @@ In deze stap verwijder je elke rots zodra deze van het speelveld afdrijft, zodat
 
 > [!TASK]
 >
-> Aan de rechterkant van de `en`{:class="block3operators"}, sleep je een `minder dan `{:class="block3operators"} blok (dit is het < blokje).
+> Aan de rechterkant van de `en`{:class="block3operators"}, sleep je een `minder dan`{:class="block3operators"} blok (dit is het < blokje).
 >
 > ```blocks3
 > define disappear
