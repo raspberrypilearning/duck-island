@@ -1,0 +1,26 @@
+---
+title: Eendeneiland
+hero_image: images/banner.png
+description: Maak een spel waarin je eenden redt in dit Code Club arcadeproject.
+listed: true
+pdf: false
+steps:
+  - title: Wat ga je maken
+  - title: Verplaats de eend
+    completion:
+      - engaged
+  - title: Drijf op het water
+  - title: Maak wat golven
+  - title: Voeg rotsen toe
+  - title: Rotsen aan de rand
+  - title: Verplaats de rotsen
+  - title: Verwijder de rotsen
+  - title: Blokkeer de eend
+  - title: Verzamelobjecten
+  - title: Voeg een obstakel toe
+    completion:
+      - internal
+  - title: 'Uitdaging: maak er je eigen versie van'
+    challenge: true
+    completion:
+      - external
