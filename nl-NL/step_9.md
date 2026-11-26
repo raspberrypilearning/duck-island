@@ -36,7 +36,7 @@ end
 > Als het een rots raakt, voeg dan een `maak rechts geblokkeerd`{:class="block3variables"} blok toe en stel dit in op `ja`.
 >
 > ```blocks3
-> if <key (right arrow v) pressed?> then
+> if <key (pijltje rechts v) pressed?> then
 > switch costume to (rechts v)
 > if <touching (obstakel v)?> then
 > +set [rechts geblokkeerd v] to [ja]
@@ -50,7 +50,7 @@ end
 > Voeg een `wacht 0.5 sec.`{:class="block3control"} blok er achteraan toe.
 >
 > ```blocks3
-> if <key (right arrow v) pressed?> then
+> if <key (pijltje rechts v) pressed?> then
 > switch costume to (rechts v)
 > if <touching (obstakel v)?> then
 > set [rechts geblokkeerd v] to [ja]
@@ -93,7 +93,7 @@ Voeg nu de blok-variabelen toe aan de rots toe zodat deze stopt met bewegen wann
 > Ga naar je **rots** sprite. In het `beweeg`{:class="block3myblocks"} blok voeg je een `en`{:class="block3operators"} blok toe en sleep je de `toets ingedrukt?`{:class="block3sensing"} naar het linkervakje.
 >
 > ```blocks3
-> define move
+> define beweeg
 > +if <<key (pijltje rechts v) pressed?> and <>> then
 > change x by ((0) - (snelheid van de rots))
 > end
@@ -115,7 +115,7 @@ Voeg nu de blok-variabelen toe aan de rots toe zodat deze stopt met bewegen wann
 > Plaats `rechts geblokkeerd`{:class="block3variables"} blok in het linkervakje en `nee` in het rechtervakje, zodat de rots alleen beweegt wanneer de rechter pijl wordt ingedrukt en rechts niet wordt geblokkeerd.
 >
 > ```blocks3
-> define move
+> define beweeg
 > if <<key (pijltje rechts v) pressed?> and <(rechts geblokkeerd) = [no]>> then
 > change x by ((0) - (snelheid van de rots))
 > end
@@ -126,7 +126,7 @@ Voeg nu de blok-variabelen toe aan de rots toe zodat deze stopt met bewegen wann
 > Dupliceer dit en doe hetzelfde voor elk van je pijltjestoetsen.
 >
 > ```blocks3
-> define move
+> define beweeg
 > if <<key (pijltje rechts v) pressed?> and <(rechts geblokkeerd) = [nee]>> then
 > change x by ((0) - (snelheid van de rots))
 > end
