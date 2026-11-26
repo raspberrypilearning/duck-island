@@ -40,11 +40,11 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 >
 > ```blocks3
 > when I start as a clone
-> appear::custom
+> verschijn::custom
 > forever
-> move::custom
-> disappear::custom
-> if <touching (player v)?> then
+> beweeg::custom
+> verdwijn::custom
+> if <touching (speler v)?> then
 > +start sound (Rip v)
 > delete this clone
 > end
@@ -57,14 +57,14 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 >
 > ```blocks3
 > when I start as a clone
-> appear::custom
+> verschijn::custom
 > forever
-> move::custom
-> disappear::custom
-> if <touching (player v)?> then
+> beweeg::custom
+> verdwijn::custom
+> if <touching (speler v)?> then
 > start sound (Rip v)
 > +wait (0.2) seconds
-> +stop [all v]
+> +stop [alle v]
 > end
 > end
 > ```
@@ -76,7 +76,7 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 > Om het moeilijker te maken, stuur je elk obstakel vanuit een willekeurige richting. Voeg in je `verschijn`{:class="block3myblocks"} blok een `richt naar () graden`{:class="block3motion"} toe en zet in het vakje een `willekeurig getal tussen () en ()`{:class="block3operators"} blok.
 >
 > ```blocks3
-> define appear
+> define verschijn
 > +point in direction (pick random (-180) to (180))
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > set size to (pick random (20) to (100)) %
@@ -93,14 +93,14 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 >
 > ```blocks3
 > when I start as a clone
-> appear::custom
+> verschijn::custom
 > forever
-> move::custom
-> disappear::custom
-> if <touching (player v)?> then
+> beweeg::custom
+> verdwijn::custom
+> if <touching (speler v)?> then
 > start sound (Rip v)
 > wait (0.2) seconds
-> stop [all v]
+> stop [alle v]
 > end
 > +move (3) steps
 > end

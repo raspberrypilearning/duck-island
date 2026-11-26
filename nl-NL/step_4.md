@@ -30,7 +30,7 @@ Om ervoor te zorgen dat de beweging er echt uitziet, kun je een golf toevoegen d
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [achtergrond v] layer
 > go to x: (0) y: (-20)
 > ```
 
@@ -42,7 +42,7 @@ Om ervoor te zorgen dat de beweging er echt uitziet, kun je een golf toevoegen d
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [achtergrond v] layer
 > go to x: (0) y: (-20)
 > forever
 > +if <> then
@@ -77,10 +77,10 @@ Maak nu een geanimeerde versie voor wanneer de eend beweegt.
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [achtergrond v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (any v) pressed?> then
+> if <key (willekeurig v) pressed?> then
 > else
 > change y by (-1)
 > wait (0.3) seconds
@@ -96,10 +96,10 @@ Maak nu een geanimeerde versie voor wanneer de eend beweegt.
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [achtergrond v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (any v) pressed?> then
+> if <key (willekeurig v) pressed?> then
 > +next costume
 > +wait (0.1) seconds
 > else
@@ -117,14 +117,14 @@ Maak nu een geanimeerde versie voor wanneer de eend beweegt.
 >
 > ```blocks3
 > when green flag clicked
-> go to [back v] layer
+> go to [achtergrond v] layer
 > go to x: (0) y: (-20)
 > forever
-> if <key (any v) pressed?> then
+> if <key (willekeurig v) pressed?> then
 > next costume
 > wait (0.1) seconds
 > else
-> +switch costume to (costume1 v)
+> +switch costume to (uiterlijk1 v)
 > change y by (-1)
 > wait (0.3) seconds
 > change y by (1)

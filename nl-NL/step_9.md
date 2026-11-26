@@ -13,8 +13,8 @@ Op dit moment zwemt je eend dwars door de rotsen heen. In deze stap zorg je ervo
 Je hebt dit `verander uiterlijk`{:class="block3looks"} script gemaakt voor de rechter pijl in stap 2:
 
 ```blocks3
-if <key (right arrow v) pressed?> then
-switch costume to (right v)
+if <key (pijltje rechts v) pressed?> then
+switch costume to (rechts v)
 end
 ```
 
@@ -23,9 +23,9 @@ end
 > Voeg onder het `verander uiterlijk`{:class="block3looks"}, een `als dan anders`{:class="block3control"} blok toe. Sleep een 'raak ik?'{:class="block3sensing"} blok erin en kies **obstakel**.
 >
 > ```blocks3
-> if <key (right arrow v) pressed?> then
-> switch costume to (right v)
-> +if <touching (obstacle v)?> then
+> if <key (pijltje rechts v) pressed?> then
+> switch costume to (rechts v)
+> +if <touching (obstakel v)?> then
 > else
 > end
 > end
@@ -37,9 +37,9 @@ end
 >
 > ```blocks3
 > if <key (right arrow v) pressed?> then
-> switch costume to (right v)
-> if <touching (obstacle v)?> then
-> +set [right blocked v] to [yes]
+> switch costume to (rechts v)
+> if <touching (obstakel v)?> then
+> +set [rechts geblokkeerd v] to [ja]
 > else
 > end
 > end
@@ -51,9 +51,9 @@ end
 >
 > ```blocks3
 > if <key (right arrow v) pressed?> then
-> switch costume to (right v)
-> if <touching (obstacle v)?> then
-> set [right blocked v] to [yes]
+> switch costume to (rechts v)
+> if <touching (obstakel v)?> then
+> set [rechts geblokkeerd v] to [ja]
 > +wait (0.5) seconds
 > else
 > end
@@ -65,13 +65,13 @@ end
 > Doe hetzelfde in het `anders`{:class="block3control"} gedeelte: voeg een `maak rechts geblokkeerd`{:class="block3variables"} blok toe en zet het op `nee`.
 >
 > ```blocks3
-> if <key (right arrow v) pressed?> then
-> switch costume to (right v)
-> if <touching (obstacle v)?> then
-> set [right blocked v] to [yes]
+> if <key (pijltje rechts v) pressed?> then
+> switch costume to (rechts v)
+> if <touching (obstakel v)?> then
+> set [rechts geblokkeerd v] to [ja]
 > wait (0.5) seconds
 > else
-> +set [right blocked v] to [no]
+> +set [rechts geblokkeerd v] to [nee]
 > end
 > end
 > ```
@@ -94,8 +94,8 @@ Voeg nu de blok-variabelen toe aan de rots toe zodat deze stopt met bewegen wann
 >
 > ```blocks3
 > define move
-> +if <<key (right arrow v) pressed?> and <>> then
-> change x by ((0) - (rock speed))
+> +if <<key (pijltje rechts v) pressed?> and <>> then
+> change x by ((0) - (snelheid van de rots))
 > end
 > ```
 
@@ -104,9 +104,9 @@ Voeg nu de blok-variabelen toe aan de rots toe zodat deze stopt met bewegen wann
 > Sleep een `is gelijk aan`{:class="block3operators"} blok (dit is het blokje met het = symbool) naar het `en`{:class="block3operators"} blok.
 >
 > ```blocks3
-> define move
-> if <<key (right arrow v) pressed?> and <() = ()>> then
-> change x by ((0) - (rock speed))
+> define beweeg
+> if <<key (pijltje rechts v) pressed?> and <() = ()>> then
+> change x by ((0) - (snelheid van de rots))
 > end
 > ```
 
@@ -116,8 +116,8 @@ Voeg nu de blok-variabelen toe aan de rots toe zodat deze stopt met bewegen wann
 >
 > ```blocks3
 > define move
-> if <<key (right arrow v) pressed?> and <(right blocked) = [no]>> then
-> change x by ((0) - (rock speed))
+> if <<key (pijltje rechts v) pressed?> and <(rechts geblokkeerd) = [no]>> then
+> change x by ((0) - (snelheid van de rots))
 > end
 > ```
 
@@ -127,17 +127,17 @@ Voeg nu de blok-variabelen toe aan de rots toe zodat deze stopt met bewegen wann
 >
 > ```blocks3
 > define move
-> if <<key (right arrow v) pressed?> and <(right blocked) = [no]>> then
-> change x by ((0) - (rock speed))
+> if <<key (pijltje rechts v) pressed?> and <(rechts geblokkeerd) = [nee]>> then
+> change x by ((0) - (snelheid van de rots))
 > end
-> +if <<key (left arrow v) pressed?> and <(left blocked) = [no]>> then
-> change x by (rock speed)
+> +if <<key (pijltje links v) pressed?> and <(links geblokkeerd) = [nee]>> then
+> change x by (snelheid van de rots)
 > end
-> +if <<key (down arrow v) pressed?> and <(down blocked) = [no]>> then
-> change y by (rock speed)
+> +if <<key (pijltje omlaag v) pressed?> and <(omlaag geblokkeerd) = [nee]>> then
+> change y by (snelheid van de rots)
 > end
-> +if <<key (up arrow v) pressed?> and <(up blocked) = [no]>> then
-> change y by ((0) - (rock speed))
+> +if <<key (pijltje omhoog v) pressed?> and <(omhoog geblokkeerd) = [no]>> then
+> change y by ((0) - (snelheid van de rots))
 > end
 > ```
 

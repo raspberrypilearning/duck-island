@@ -16,11 +16,11 @@ De rotsen bewegen over het speelvel, waardoor het lijkt alsof je eendje zwemt.
 >
 > ```blocks3
 > when green flag clicked
-> +set [rock speed v] to (3)
+> +set [snelheid van de rots v] to (3)
 > hide
 > forever
-> if <key (any v) pressed?> then
-> create clone of (myself v)
+> if <key (willekeurig v) pressed?> then
+> create clone of (mijzelf v)
 > end
 > wait (pick random (1) to (3)) seconds
 > end
@@ -38,8 +38,8 @@ De rotsen bewegen over het speelvel, waardoor het lijkt alsof je eendje zwemt.
 >
 > ```blocks3
 > define move
-> if <key (left arrow v) pressed?> then
-> change x by (rock speed)
+> if <key (pijltje links v) pressed?> then
+> change x by (snelheid van de rots)
 > end
 > ```
 
@@ -48,12 +48,12 @@ De rotsen bewegen over het speelvel, waardoor het lijkt alsof je eendje zwemt.
 > Voeg nog een `als dan`{:class="block3control"} toe voor de **pijltje omlaag**, met een `verander y door`{:class="block3motion"} en daarin de`snelheid van de de rots`{:class="block3variables"} variabele.
 >
 > ```blocks3
-> define move
-> if <key (left arrow v) pressed?> then
-> change x by (rock speed)
+> define beweeg
+> if <key (pijltje links v) pressed?> then
+> change x by (snelheid van de rots)
 > end
-> +if <key (down arrow v) pressed?> then
-> change y by (rock speed)
+> +if <key (pijltje omlaag v) pressed?> then
+> change y by (snelheid van de rots)
 > end
 > ```
 
@@ -63,9 +63,9 @@ De rotsen bewegen over het speelvel, waardoor het lijkt alsof je eendje zwemt.
 >
 > ```blocks3
 > when I start as a clone
-> appear::custom
+> verschijn::custom
 > +forever
-> move::custom
+> beweeg::custom
 > end
 > ```
 
@@ -76,15 +76,15 @@ De rotsen bewegen over het speelvel, waardoor het lijkt alsof je eendje zwemt.
 > De **pijltje naar rechts** toets moet de rots de andere kant op laten bewegen. Voeg een `als dan`{:class="block3control"} blok toe voor de rots, en een `verander x met`{:class="block3motion"}, maar deze keer gebruik je een `() - ()`{:class="block3operators"} operator om de `snelheid van de rots`{:class="block3variables"} van `0` af te halen.
 >
 > ```blocks3
-> define move
-> if <key (left arrow v) pressed?> then
-> change x by (rock speed)
+> define beweeg
+> if <key (pijltje linksv) pressed?> then
+> change x by (snelheid van de rots)
 > end
-> if <key (down arrow v) pressed?> then
-> change y by (rock speed)
+> if <key (pijltje omlaag v) pressed?> then
+> change y by (snelheid van de rots)
 > end
-> +if <key (right arrow v) pressed?> then
-> change x by ((0) - (rock speed))
+> +if <key (pijltje rechts v) pressed?> then
+> change x by ((0) - (snelheid van de rots))
 > end
 > ```
 
@@ -93,18 +93,18 @@ De rotsen bewegen over het speelvel, waardoor het lijkt alsof je eendje zwemt.
 > Doe hetzelfde voor het **pijltje omhoog**: een `verander y met`{:class="block3motion"} die de `snelheid van de rots`{:class="block3variables"} van `0` afhaalt.
 >
 > ```blocks3
-> define move
-> if <key (left arrow v) pressed?> then
-> change x by (rock speed)
+> define beweeg
+> if <key (pijltje links v) pressed?> then
+> change x by (nelheid van de rots)
 > end
-> if <key (down arrow v) pressed?> then
-> change y by (rock speed)
+> if <key (pijltje omlaag v) pressed?> then
+> change y by (nelheid van de rots)
 > end
-> if <key (right arrow v) pressed?> then
-> change x by ((0) - (rock speed))
+> if <key (pijltje rechts v) pressed?> then
+> change x by ((0) - (nelheid van de rots))
 > end
-> +if <key (up arrow v) pressed?> then
-> change y by ((0) - (rock speed))
+> +if <key (pijltje omhoog v) pressed?> then
+> change y by ((0) - (nelheid van de rots))
 > end
 > ```
 

@@ -9,11 +9,11 @@ In deze stap laat je elke rots aan de rand beginnen waar de eend naartoe kijkt.
 > Voeg een `als dan`{:class="block3control"} blok toe met een `toets ingedrukt?`{:class="block3sensing"} controle die is ingesteld op \*\*pijltje rechts \*\* aan de onderkant van het `definieer verschijn`{:class="block3myblocks"} blok,
 >
 > ```blocks3
-> define appear
+> define verschijn
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > set size to (pick random (20) to (100)) %
 > show
-> +if <key (right arrow v) pressed?> then
+> +if <key (pijltje rechts v) pressed?> then
 > end
 > ```
 
@@ -22,11 +22,11 @@ In deze stap laat je elke rots aan de rand beginnen waar de eend naartoe kijkt.
 > Zet **x** op `240` zodat hij aan de rechterrand begint.
 >
 > ```blocks3
-> define appear
+> define verschijn
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > set size to (pick random (20) to (100)) %
 > show
-> if <key (right arrow v) pressed?> then
+> if <key (pijltje rechts v) pressed?> then
 > +set x to (240)
 > end
 > ```
@@ -38,20 +38,20 @@ In deze stap laat je elke rots aan de rand beginnen waar de eend naartoe kijkt.
 > Doe hetzelfde voor de andere drie richtingen.
 >
 > ```blocks3
-> define appear
+> define verschijn
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > set size to (pick random (20) to (100)) %
 > show
-> if <key (right arrow v) pressed?> then
+> if <key (pijltje rechts v) pressed?> then
 > set x to (240)
 > end
-> +if <key (left arrow v) pressed?> then
+> +if <key (pijltje links v) pressed?> then
 > set x to (-240)
 > end
-> +if <key (down arrow v) pressed?> then
+> +if <key (pijltje omlaag v) pressed?> then
 > set y to (-180)
 > end
-> +if <key (up arrow v) pressed?> then
+> +if <key (pijltje omhoog v) pressed?> then
 > set y to (180)
 > end
 > ```

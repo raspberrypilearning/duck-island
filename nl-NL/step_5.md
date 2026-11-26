@@ -27,7 +27,7 @@ In deze stap voeg je rotsen toe als obstakels waar je eend omheen moet zwemmen. 
 > ```blocks3
 > when green flag clicked
 > hide
-> create clone of (myself v)
+> create clone of (mijzelf v)
 > ```
 
 > [!TASK]
@@ -41,7 +41,7 @@ In deze stap voeg je rotsen toe als obstakels waar je eend omheen moet zwemmen. 
 > In het `Mijn blokken`{:class="block3myblocks"} menu sleep je een `definieer verschijn`{:class="block3myblocks"} blok.
 >
 > ```blocks3
-> define appear
+> define verschijn
 > ```
 
 > [!TASK]
@@ -49,7 +49,7 @@ In deze stap voeg je rotsen toe als obstakels waar je eend omheen moet zwemmen. 
 > Onder `definieer verschijn`{:class="block3myblocks"} blok, voeg je een `ga naar`{:class="block3motion"} en een `verschijn`{:class="block3looks"} blok toe. Dit voorbeeld gebruikt `willekeurig getal tussen () en ()`{:class="block3operators"} voor x en y, dus elke rots verschijnt op een andere plek.
 >
 > ```blocks3
-> define appear
+> define verschijn
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > show
 > ```
@@ -59,7 +59,7 @@ In deze stap voeg je rotsen toe als obstakels waar je eend omheen moet zwemmen. 
 > Je kunt elke rots ook een willekeurige grootte geven.
 >
 > ```blocks3
-> define appear
+> define verschijn
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > +set size to (pick random (20) to (100)) %
 > show
@@ -70,7 +70,7 @@ In deze stap voeg je rotsen toe als obstakels waar je eend omheen moet zwemmen. 
 > Sleep in het `wanneer ik als kloon start`{:class="block3control"} blok je `verschijn`{:class="block3myblocks"} blok.
 >
 > ```blocks3
-> wanneer ik als kloon start
+> when I start as a clone
 > verschijn::custom
 > ```
 
@@ -85,8 +85,8 @@ De rotsen moeten verschijnen wanneer je op de pijltjestoetsen drukt. Activeer de
 > ```blocks3
 > when green flag clicked
 > hide
-> +if <key (any v) pressed?> then
-> create clone of (myself v)
+> +if <key (willekeurig v) pressed?> then
+> create clone of (mijzelf v)
 > end
 > ```
 
@@ -98,8 +98,8 @@ De rotsen moeten verschijnen wanneer je op de pijltjestoetsen drukt. Activeer de
 > when green flag clicked
 > hide
 > +forever
-> if <key (any v) pressed?> then
-> create clone of (myself v)
+> if <key (willekeurig v) pressed?> then
+> create clone of (mijzelf v)
 > end
 > end
 > ```
@@ -116,8 +116,8 @@ Om het aantal gekloonde rotsen te beperken, voeg je een kleine vertraging toe aa
 > when green flag clicked
 > hide
 > forever
-> if <key (any v) pressed?> then
-> create clone of (myself v)
+> if <key (willekeurig v) pressed?> then
+> create clone of (mijzelf v)
 > end
 > +wait (pick random (1) to (3)) seconds
 > end
