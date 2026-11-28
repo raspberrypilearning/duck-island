@@ -26,7 +26,7 @@ Begin door de eend op en neer te laten gaan wanneer er een toets wordt ingedrukt
 > ```blocks3
 > when green flag clicked
 > forever
-> +if <key (willekeurig v) pressed?> then
+> +if <key (any v) pressed?> then
 > else
 > end
 > end
@@ -39,7 +39,7 @@ Begin door de eend op en neer te laten gaan wanneer er een toets wordt ingedrukt
 > ```blocks3
 > when green flag clicked
 > forever
-> if <key (willekeurig v) pressed?> then
+> if <key (any v) pressed?> then
 > +change y by (3)
 > +wait (0.1) seconds
 > +change y by (-3)
@@ -62,7 +62,7 @@ Begin door de eend op en neer te laten gaan wanneer er een toets wordt ingedrukt
 > ```blocks3
 > when green flag clicked
 > forever
-> if <key (willekeurig v) pressed?> then
+> if <key (any v) pressed?> then
 > change y by (3)
 > wait (0.1) seconds
 > change y by (-3)

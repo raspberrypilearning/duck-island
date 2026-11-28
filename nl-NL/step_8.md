@@ -15,7 +15,7 @@ In deze stap verwijder je elke rots zodra deze van het speelveld afdrijft, zodat
 > Onder `definieer verdwijn`{:class="block3myblocks"}, voeg je een `als dan`{:class="block3control"} blok toe en sleep een `en`{:class="block3operators"} operator erin.
 >
 > ```blocks3
-> define verdwijn
+> define disappear
 > if <<> and <>> then
 > end
 > ```
@@ -25,18 +25,18 @@ In deze stap verwijder je elke rots zodra deze van het speelveld afdrijft, zodat
 > Plaats aan de linkerkant van de `en`{:class="block3operators"}, een `toets ingedrukt?`{:class="block3sensing"} blok voor de **pijltje rechts** toets.
 >
 > ```blocks3
-> define verdwijn
-> if <<key (pijltje rechts v) pressed?> and <>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <>> then
 > end
 > ```
 
 > [!TASK]
 >
-> Aan de rechterkant van de `en`{:class="block3operators"}, sleep je een `minder dan`{:class="block3operators"} blok (dit is het < blokje).
+> Aan de rechterkant van de `en`{:class="block3operators"}, sleep je een `minder dan `{:class="block3operators"} blok (dit is het < blokje).
 >
 > ```blocks3
-> define verdwijn
-> if <<key (pijltje rechts v) pressed?> and <() < ()>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <() < ()>> then
 > end
 > ```
 
@@ -45,8 +45,8 @@ In deze stap verwijder je elke rots zodra deze van het speelveld afdrijft, zodat
 > Zet `x-positie`{:class="block3motion"} aan de linkerkant en `-240` aan de rechterkant.
 >
 > ```blocks3
-> define verdwijn
-> if <<key (pijltje rechts v) pressed?> and <(x-positie) < (-240)>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
 > end
 > ```
 
@@ -55,8 +55,8 @@ In deze stap verwijder je elke rots zodra deze van het speelveld afdrijft, zodat
 > Voeg een `verwijder deze kloon`{:class="block3control"} blok toe in `als`{:class="block3control"}.
 >
 > ```blocks3
-> define verdwijn
-> if <<key (pijltje rechts v) pressed?> and <(x-positie) < (-240)>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
 > +delete this clone
 > end
 > ```
@@ -67,10 +67,10 @@ In deze stap verwijder je elke rots zodra deze van het speelveld afdrijft, zodat
 >
 > ```blocks3
 > when I start as a clone
-> verschijn::custom
+> appear::custom
 > forever
-> beweeg::custom
-> +verdwijn::custom
+> move::custom
+> +disappear::custom
 > end
 > ```
 
@@ -81,17 +81,17 @@ In deze stap verwijder je elke rots zodra deze van het speelveld afdrijft, zodat
 > Dupliceer het `als`{:class="block3control"} blok voor de andere 3 randen, waarbij je de toets, de x/y-waarden en de getallen aanpast.
 >
 > ```blocks3
-> define verdwijn
-> if <<key (pijltje rechts v) pressed?> and <(x-positie) < (-240)>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
 > delete this clone
 > end
-> +if <<key (pijltje links v) pressed?> and <(x-positie) > (240)>> then
+> +if <<key (left arrow v) pressed?> and <(x position) > (240)>> then
 > delete this clone
 > end
-> +if <<key (pijltje omlaag v) pressed?> and <(y-positie) > (180)>> then
+> +if <<key (down arrow v) pressed?> and <(y position) > (180)>> then
 > delete this clone
 > end
-> +if <<key (pijltje omhoog v) pressed?> and <(y-positie) < (-180)>> then
+> +if <<key (up arrow v) pressed?> and <(y position) < (-180)>> then
 > delete this clone
 > end
 > ```

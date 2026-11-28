@@ -40,11 +40,11 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 >
 > ```blocks3
 > when I start as a clone
-> verschijn::custom
+> appear::custom
 > forever
-> beweeg::custom
-> verdwijn::custom
-> if <touching (speler v)?> then
+> move::custom
+> disappear::custom
+> if <touching (player v)?> then
 > +start sound (Rip v)
 > delete this clone
 > end
@@ -57,14 +57,14 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 >
 > ```blocks3
 > when I start as a clone
-> verschijn::custom
+> appear::custom
 > forever
-> beweeg::custom
-> verdwijn::custom
-> if <touching (speler v)?> then
+> move::custom
+> disappear::custom
+> if <touching (player v)?> then
 > start sound (Rip v)
 > +wait (0.2) seconds
-> +stop [alle v]
+> +stop [all v]
 > end
 > end
 > ```
@@ -73,10 +73,10 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 
 > [!TASK]
 >
-> Om het moeilijker te maken, stuur je elk obstakel vanuit een willekeurige richting. Voeg in je `verschijn`{:class="block3myblocks"} blok een `richt naar () graden`{:class="block3motion"} toe en zet in het vakje een `willekeurig getal tussen () en ()`{:class="block3operators"} blok.
+> Om het moeilijker te maken, stuur je elk obstakel vanuit een willekeurige richting. Voeg in je `verschijn`{:class="block3myblocks"} blok een `richt naar () graden `{:class="block3motion"} toe en zet in het vakje een `willekeurig getal tussen () en ()`{:class="block3operators"} blok.
 >
 > ```blocks3
-> define verschijn
+> define appear
 > +point in direction (pick random (-180) to (180))
 > go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
 > set size to (pick random (20) to (100)) %
@@ -93,14 +93,14 @@ In deze stap voeg je een obstakel toe dat je eend moet ontwijken, anders is het 
 >
 > ```blocks3
 > when I start as a clone
-> verschijn::custom
+> appear::custom
 > forever
-> beweeg::custom
-> verdwijn::custom
-> if <touching (speler v)?> then
+> move::custom
+> disappear::custom
+> if <touching (player v)?> then
 > start sound (Rip v)
 > wait (0.2) seconds
-> stop [alle v]
+> stop [all v]
 > end
 > +move (3) steps
 > end

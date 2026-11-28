@@ -22,11 +22,11 @@ In deze stap verzamel je de verloren eendjes om punten te verdienen. Je kunt de 
 >
 > ```blocks3
 > when I start as a clone
-> verschijn::custom
+> appear::custom
 > forever
-> beweeg::custom
-> verdwijn::custom
-> +if <touching (speler v)?> then
+> move::custom
+> disappear::custom
+> +if <touching (player v)?> then
 > end
 > end
 > ```
@@ -43,12 +43,12 @@ In deze stap verzamel je de verloren eendjes om punten te verdienen. Je kunt de 
 >
 > ```blocks3
 > when green flag clicked
-> set [snelheid van de rots v] to (3)
+> set [rock speed v] to (3)
 > +set [score v] to (0)
 > hide
 > forever
-> if <key (willekeurig v) pressed?> then
-> create clone of (mijzelf v)
+> if <key (any v) pressed?> then
+> create clone of (myself v)
 > end
 > wait (pick random (1) to (3)) seconds
 > end
@@ -60,9 +60,9 @@ In deze stap verzamel je de verloren eendjes om punten te verdienen. Je kunt de 
 >
 > ```blocks3
 > forever
-> beweeg::custom
-> verdwijn::custom
-> if <touching (speler v)?> then
+> move::custom
+> disappear::custom
+> if <touching (player v)?> then
 > +change [score v] by (1)
 > end
 > end
@@ -86,9 +86,9 @@ In deze stap verzamel je de verloren eendjes om punten te verdienen. Je kunt de 
 >
 > ```blocks3
 > forever
-> beweeg::custom
-> verdwijn::custom
-> if <touching (speler v)?> then
+> move::custom
+> disappear::custom
+> if <touching (player v)?> then
 > change [score v] by (1)
 > +start sound (Glug v)
 > end
@@ -101,9 +101,9 @@ In deze stap verzamel je de verloren eendjes om punten te verdienen. Je kunt de 
 >
 > ```blocks3
 > forever
-> beweeg::custom
-> verdwijn::custom
-> if <touching (speler v)?> then
+> move::custom
+> disappear::custom
+> if <touching (player v)?> then
 > change [score v] by (1)
 > start sound (Glug v)
 > +delete this clone

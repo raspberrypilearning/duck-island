@@ -15,7 +15,7 @@ In questa fase, eliminerai ogni roccia non appena uscirà dal palco, in modo che
 > Sotto `definisci sparire`{:class="block3myblocks"}, aggiungi un `se allora`{:class="block3control"} e trascina un blocco `e`{:class="block3operators"} al suo interno.
 >
 > ```blocks3
-> define sparire
+> define disappear
 > if <<> and <>> then
 > end
 > ```
@@ -25,8 +25,8 @@ In questa fase, eliminerai ogni roccia non appena uscirà dal palco, in modo che
 > Nella parte sinistra di `e`{:class="block3operators"}, inserisci un `tasto premuto`{:class="block3sensing"} impostato sulla **freccia destra**.
 >
 > ```blocks3
-> define sparire
-> if <<key (freccia destra v) pressed?> and <>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <>> then
 > end
 > ```
 
@@ -35,8 +35,8 @@ In questa fase, eliminerai ogni roccia non appena uscirà dal palco, in modo che
 > Sul lato destro di `e`{:class="block3operators"}, trascina un blocco `minore`{:class="block3operators"}.
 >
 > ```blocks3
-> define sparire
-> if <<key (freccia destra v) pressed?> and <() < ()>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <() < ()>> then
 > end
 > ```
 
@@ -45,8 +45,8 @@ In questa fase, eliminerai ogni roccia non appena uscirà dal palco, in modo che
 > Posiziona `posizione x`{:class="block3motion"} a sinistra e `-240` a destra.
 >
 > ```blocks3
-> define sparire
-> if <<key (freccia destra v) pressed?> and <(posizione x) < (-240)>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
 > end
 > ```
 
@@ -55,8 +55,8 @@ In questa fase, eliminerai ogni roccia non appena uscirà dal palco, in modo che
 > Aggiungi un `elimina questo clone`{:class="block3control"} all'interno del `se`{:class="block3control"}.
 >
 > ```blocks3
-> define sparire
-> if <<key (freccia destra v) pressed?> and <(posizione x) < (-240)>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
 > +delete this clone
 > end
 > ```
@@ -81,17 +81,17 @@ In questa fase, eliminerai ogni roccia non appena uscirà dal palco, in modo che
 > Duplica il blocco `se`{:class="block3control"} per gli altri 3 bordi, cambiando la chiave, le coordinate x/y e i numeri.
 >
 > ```blocks3
-> define sparire
-> if <<key (freccia destra v) pressed?> and <(posizione x) < (-240)>> then
+> define disappear
+> if <<key (right arrow v) pressed?> and <(x position) < (-240)>> then
 > delete this clone
 > end
-> +if <<key (freccia sinistra v) pressed?> and <(posizione x) > (240)>> then
+> +if <<key (left arrow v) pressed?> and <(x position) > (240)>> then
 > delete this clone
 > end
-> +if <<key (freccia giù v) pressed?> and <(posizione y) > (180)>> then
+> +if <<key (down arrow v) pressed?> and <(y position) > (180)>> then
 > delete this clone
 > end
-> +if <<key (freccia su v) pressed?> and <(posizione y) < (-180)>> then
+> +if <<key (up arrow v) pressed?> and <(y position) < (-180)>> then
 > delete this clone
 > end
 > ```

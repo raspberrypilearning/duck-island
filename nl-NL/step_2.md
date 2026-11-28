@@ -32,8 +32,8 @@ Je eend staat al op het Speelveld. De sprite heet **speler**. Andere sprites zul
 >
 > ```blocks3
 > when green flag clicked
-> go to [voorgrond v] layer
-> switch costume to (omlaag v)
+> go to [front v] layer
+> switch costume to (down v)
 > go to x: (0) y: (0)
 > ```
 
@@ -45,11 +45,11 @@ Gebruik de pijltjestoetsen om de eend te draaien.
 >
 > ```blocks3
 > when green flag clicked
-> go to [voorgrond v] layer
-> switch costume to (omlaag v)
+> go to [front v] layer
+> switch costume to (down v)
 > go to x: (0) y: (0)
 > +forever
-> if <key (pijltje rechts v) pressed?> then
+> if <key (right arrow v) pressed?> then
 > end
 > end
 > ```
@@ -60,29 +60,29 @@ Gebruik de pijltjestoetsen om de eend te draaien.
 >
 > ```blocks3
 > forever
-> if <key (pijltje rechts v) pressed?> then
-> +switch costume to (rechts v)
+> if <key (right arrow v) pressed?> then
+> +switch costume to (right v)
 > end
 > end
 > ```
 
 > [!TASK]
 >
-> Doe hetzelfde voor de andere drie toetsen: `pijltje links`{:class="block3sensing"} → links, `pijltje omlaag`{:class="block3sensing"} → omlaag, en `pijltje omhoog`{:class="block3sensing"} → omhoog.
+> Doe hetzelfde voor de andere drie toetsen: `pijltje links `{:class="block3sensing"} → links, `pijltje omlaag`{:class="block3sensing"} → omlaag, en `pijltje omhoog`{:class="block3sensing"} → omhoog.
 >
 > ```blocks3
 > forever
-> if <key (pijltje rechts v) pressed?> then
-> switch costume to (rechts v)
+> if <key (right arrow v) pressed?> then
+> switch costume to (right v)
 > end
-> +if <key (pijltje links v) pressed?> then
-> switch costume to (links v)
+> +if <key (left arrow v) pressed?> then
+> switch costume to (left v)
 > end
-> +if <key (pijltje omlaag v) pressed?> then
-> switch costume to (omlaag v)
+> +if <key (down arrow v) pressed?> then
+> switch costume to (down v)
 > end
-> +if <key (pijltje omhoog v) pressed?> then
-> switch costume to (omhoog v)
+> +if <key (up arrow v) pressed?> then
+> switch costume to (up v)
 > end
 > end
 > ```
